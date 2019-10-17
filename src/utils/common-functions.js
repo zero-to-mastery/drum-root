@@ -1,4 +1,4 @@
-export const signin = (email, password) =>
+export const signin = async (email, password) =>
   fetch("http://localhost:3000/signin", {
     method: "post",
     headers: { "Content-Type": "application/json" },
@@ -6,11 +6,12 @@ export const signin = (email, password) =>
   })
     .then(response => response.json())
     .then(data => {
-      if (data.userId && data.success === "true") {
+      console.log("in", data);
+      if (data.userId && data.success) {
+        console.log("seetting");
         window.sessionStorage.setItem("token", data.token);
       }
-    })
-    .catch(console.log);
+    });
 
 export const signout = () => {
   fetch("http://localhost:3000/signout", {
