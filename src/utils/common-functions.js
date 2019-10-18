@@ -1,3 +1,5 @@
+import { useRef, useEffect } from "react";
+
 export const signin = async (email, password) =>
   fetch("http://localhost:3000/signin", {
     method: "post",
@@ -25,4 +27,22 @@ export const signout = () => {
       window.sessionStorage.removeItem("token");
     })
     .catch(err => console.log);
+};
+
+// https://overreacted.io/making-setinterval-declarative-with-react-hooks/
+export const useInterval = (callback, delay) => {
+  const savedCallback = useRef();
+
+  useEffect(() => {
+    savedCallback.current = callback;
+  });
+
+  useEffect(() => {
+    function tick() {
+      savedCallback.current();
+    }
+
+    let id = setInterval(tick, delay);
+    return () => clearInterval(id);
+  }, [delay]);
 };

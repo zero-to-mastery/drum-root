@@ -1,45 +1,26 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
 import Slider from "react-input-slider";
-import Tone from "tone";
+import DrumPad from "../Components/DrumPad";
+import { useInterval } from "../utils/common-functions";
+// import Tone from "tone";
 
-const synth = new Tone.Synth().toMaster();
-
-const Table = styled.table`
-  border-collapse: collapse;
-  border-spacing: 0px;
-  &,
-  th,
-  td {
-    padding: 5px;
-    border: 1px solid black;
-  }
-  td:first-child {
-    background-color: ${({ count }) => (count === 1 ? "yellow" : "white")};
-  }
-
-  td:first-child + td {
-    background-color: ${({ count }) => (count === 2 ? "yellow" : "white")};
-  }
-
-  td:first-child + td + td {
-    background-color: ${({ count }) => (count === 3 ? "yellow" : "white")};
-  }
-
-  td:first-child + td + td + td {
-    background-color: ${({ count }) => (count === 4 ? "yellow" : "white")};
-  }
-`;
+// const synth = new Tone.Synth().toMaster();
 
 const Home = () => {
   const [tempo, setTempo] = useState(100);
   const [play, setPlay] = useState(false);
   const [count, setCount] = useState(1);
-  const [playIntereval, setPlayInterval] = useState();
   const [audioCtx, setAudioCtx] = useState();
+  useInterval(() => {
+    if (play) {
+      setCount(count => (count === 4 ? 1 : count + 1));
+      playNote();
+    }
+  }, 1000 * (60 / tempo));
+
   useEffect(() => {
     setAudioCtx(new (window.AudioContext || window.webkitAudioContext)());
-    return clearInterval(playIntereval);
+    return clearInterval(useInterval);
   }, []);
 
   const createOscillator = () => {
@@ -56,17 +37,8 @@ const Home = () => {
   };
 
   const onPlayButtonClick = active => {
-    console.log({ active });
-    if (active) {
-      setPlayInterval(
-        setInterval(() => {
-          setCount(count => (count === 4 ? 1 : count + 1));
-          playNote();
-        }, 1000 * (60 / tempo))
-      );
-    } else {
-      clearInterval(playIntereval);
-      setPlayInterval(null);
+    if (!active) {
+      setCount(1);
     }
     setPlay(active);
   };
@@ -75,7 +47,7 @@ const Home = () => {
   const playNote = () => {
     const note = createOscillator();
     note.start();
-    synth.triggerAttackRelease("C4", "8n");
+    // synth.triggerAttackRelease("C4", "8n");
     setTimeout(() => {
       note.stop();
     }, 25);
@@ -93,29 +65,16 @@ const Home = () => {
         xmax={300}
       />
       <button onClick={() => onPlayButtonClick(!play)}>
-        {play ? "Pause" : "Play"}
+        {play ? "Stop" : "Play"}
       </button>
-      <colgroup span="4"></colgroup>
-      <Table {...{ count }}>
-        <tr>
-          <th>1</th>
-          <th>2</th>
-          <th>3</th>
-          <th>4</th>
-        </tr>
-        <tr>
-          <td>🛢️</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td>🥁</td>
-          <td></td>
-        </tr>
-      </Table>
+      <DrumPad
+        {...{ count }}
+        layout={[
+          { name: "cymbol", icon: "🇹🇼", beats: [true, true, true, true] },
+          { name: "bass", icon: "🛢️", beats: [true, false, false, false] },
+          { name: "snare", icon: "🥁", beats: [false, false, true, false] }
+        ]}
+      />
       <div>Welcome to Next.js!</div>
     </>
   );
