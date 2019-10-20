@@ -2,6 +2,7 @@ import { useRef, useEffect } from "react";
 import Router from "next/router";
 import nextCookie from "next-cookies";
 import cookie from "js-cookie";
+import isNode from "is-node";
 
 export const signin = async (email, password) =>
   fetch("http://localhost:3000/signin", {
@@ -11,13 +12,12 @@ export const signin = async (email, password) =>
   })
     .then(response => response.json())
     .then(data => {
-      console.log("in", data);
       if (data.userId && data.success) {
-        console.log("seetting");
         window.sessionStorage.setItem("token", data.token);
         cookie.set("token", data.token, { expires: 1 });
       }
-    });
+    })
+    .catch(console.log);
 
 export const signout = () => {
   // TODO: figure out how to set env vars
@@ -68,4 +68,8 @@ export const auth = ctx => {
   }
 
   return token;
+};
+
+export const logError = function() {
+  if (!isNode) console.error.apply(console, arguments); // eslint-disable-line
 };

@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-input-slider";
 import fetch from "isomorphic-unfetch";
+import Error from "../Components/Error";
 import DrumPad from "../Components/DrumPad";
 import { useInterval, auth } from "../utils/common-functions";
 import { getOscillator, createMetronomeOscillator } from "../utils/sounds";
+import { Helmet } from "react-helmet";
 
-const Home = ({ originalLayout }) => {
+const Home = ({ originalLayout, error }) => {
   const [tempo, setTempo] = useState(100);
   const [play, setPlay] = useState(false);
   const [count, setCount] = useState(1);
@@ -55,8 +57,13 @@ const Home = ({ originalLayout }) => {
     }, 25);
   };
 
+  if (error) return <Error {...{ error }}></Error>;
+
   return (
     <>
+      <Helmet>
+        <title>Drum Root</title>
+      </Helmet>
       <p>Count: {count}</p>
       <p>Tempo: {tempo}</p>
       <button onClick={() => setMetronome(!metronome)}>
@@ -80,8 +87,8 @@ const Home = ({ originalLayout }) => {
 
 Home.getInitialProps = async ctx => {
   const token = auth(ctx);
-  console.log({ token });
   let originalLayout = [];
+  let error;
   try {
     const response = await fetch("http://localhost:3000/drumlayout", {
       method: "GET",
@@ -93,9 +100,9 @@ Home.getInitialProps = async ctx => {
     console.log({ response });
     originalLayout = await response.json();
   } catch (e) {
-    console.log(e);
+    error = e;
   }
-  return { originalLayout };
+  return { originalLayout, error };
 };
 
 export default Home;

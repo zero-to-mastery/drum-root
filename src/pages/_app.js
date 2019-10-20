@@ -1,7 +1,18 @@
 import React from "react";
 import App from "next/app";
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
+import Link from "next/link";
 import { signout } from "../utils/common-functions";
+import ErrorBoundary from "../Components/ErrorBoundary";
+
+const BodyStyling = createGlobalStyle`
+  body {
+    a{ 
+      text-decoration: none;
+      color: black
+    }
+  }
+`;
 
 const PageWrapper = styled.div`
   padding: 0 2rem;
@@ -24,15 +35,22 @@ class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <PageWrapper>
-        <header>
-          <HeaderStyling>
-            <h1>Drum Root</h1>
-            <Button onClick={signout}>Sign Out</Button>
-          </HeaderStyling>
-        </header>
-        <Component {...pageProps} />
-      </PageWrapper>
+      <ErrorBoundary>
+        <BodyStyling />
+        <PageWrapper>
+          <header>
+            <HeaderStyling>
+              <Link href="/">
+                <a href="/">
+                  <h1>Drum Root</h1>
+                </a>
+              </Link>
+              <Button onClick={signout}>Sign Out</Button>
+            </HeaderStyling>
+          </header>
+          <Component {...pageProps} />
+        </PageWrapper>
+      </ErrorBoundary>
     );
   }
 }

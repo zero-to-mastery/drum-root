@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { signin } from "../utils/common-functions";
 import FormWrapper from "../Components/FormWrapper";
 import { useRouter } from "next/router";
+import { Helmet } from "react-helmet";
+
 const Signin = ({ onRouteChange, loadUser }) => {
   const router = useRouter();
   const [signinEmail, setSigninEmail] = useState("");
@@ -14,6 +16,9 @@ const Signin = ({ onRouteChange, loadUser }) => {
 
   return (
     <>
+      <Helmet>
+        <title>Sign In</title>
+      </Helmet>
       <FormWrapper onSubmit={onSubmitSignIn}>
         <fieldset>
           <legend>Sign In</legend>
