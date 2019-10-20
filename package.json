@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.6"
+    "babel-plugin-styled-components": "^1.10.6",
+    "prettier": "^1.18.2"
   }
 }

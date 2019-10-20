@@ -24,7 +24,8 @@ const Table = styled.table`
   }
 `;
 
-const DrumPad = ({ count, layout,
+const DrumPad = ({ count, 
+  layout,
    swapBeat }) => {
   return (
     <Table {...{ count }}>
