@@ -24,14 +24,20 @@ const Table = styled.table`
   }
 `;
 
-const DrumPad = ({ count, layout }) => {
+const DrumPad = ({ count, layout, swapBeat }) => {
   return (
     <Table {...{ count }}>
       <tbody>
-        {layout.map(({ name, icon, beats }) => (
-          <tr key={name}>
-            {beats.map((hasBeat, idx) => (
-              <td key={idx}>
+        {layout.map(({ name, icon, beats }, rowNum) => (
+          <tr key={name} onClick={() => console.log("hello")}>
+            {beats.map((hasBeat, beatNum) => (
+              <td
+                key={beatNum}
+                onClick={() => {
+                  console.log({ rowNum, beatNum });
+                  swapBeat(rowNum, beatNum);
+                }}
+              >
                 {hasBeat ? (
                   <span role="img" aria-label={name}>
                     {icon}

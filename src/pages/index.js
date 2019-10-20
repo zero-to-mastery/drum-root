@@ -2,15 +2,17 @@ import React, { useState, useEffect } from "react";
 import Slider from "react-input-slider";
 import DrumPad from "../Components/DrumPad";
 import { useInterval } from "../utils/common-functions";
-// import Tone from "tone";
+import { getOscillator, createMetronomeOscillator } from "../utils/sounds";
+import { mockLayout1 } from "../mockData/mockLayout";
 
-// const synth = new Tone.Synth().toMaster();
-
-const Home = () => {
+const Home = ({ mockLayout1 }) => {
   const [tempo, setTempo] = useState(100);
   const [play, setPlay] = useState(false);
   const [count, setCount] = useState(1);
   const [audioCtx, setAudioCtx] = useState();
+  const [metronome, setMetronome] = useState(false);
+  const [layout, setLayout] = useState(mockLayout1);
+
   useInterval(() => {
     if (play) {
       setCount(count => (count === 4 ? 1 : count + 1));
@@ -23,19 +25,6 @@ const Home = () => {
     return clearInterval(useInterval);
   }, []);
 
-  const createOscillator = () => {
-    const oscillator = audioCtx.createOscillator();
-    const gainNode = audioCtx.createGain();
-
-    oscillator.connect(gainNode);
-    gainNode.connect(audioCtx.destination);
-
-    gainNode.gain.value = 0.5;
-    oscillator.frequency.value = 1983;
-    oscillator.type = "triangle";
-    return oscillator;
-  };
-
   const onPlayButtonClick = active => {
     if (!active) {
       setCount(1);
@@ -43,13 +32,26 @@ const Home = () => {
     setPlay(active);
   };
 
-  /* Play note on a delayed interval of t */
+  const swapBeat = (rowNum, beatNum) => {
+    const newLayout = [...layout];
+    newLayout[rowNum].beats[beatNum] = !layout[rowNum].beats[beatNum];
+    setLayout(newLayout);
+  };
+
   const playNote = () => {
-    const note = createOscillator();
-    note.start();
-    // synth.triggerAttackRelease("C4", "8n");
+    const metranomeSound = createMetronomeOscillator(audioCtx);
+    const layoutNotes = layout.map(
+      ({ beats, name }) => beats[count - 1] && getOscillator(audioCtx, name)
+    );
+    layoutNotes.forEach(note => {
+      if (note) note.start();
+    });
+    if (metronome) metranomeSound.start();
     setTimeout(() => {
-      note.stop();
+      if (metronome) metranomeSound.stop();
+      layoutNotes.forEach(note => {
+        if (note) note.stop();
+      });
     }, 25);
   };
 
@@ -57,6 +59,10 @@ const Home = () => {
     <>
       <p>Count: {count}</p>
       <p>Tempo: {tempo}</p>
+      <button onClick={() => setMetronome(!metronome)}>
+        {metronome ? "Turn off metronome" : "Turn on metronome"}
+      </button>
+      <hr />
       <Slider
         axis="x"
         x={tempo}
@@ -67,17 +73,13 @@ const Home = () => {
       <button onClick={() => onPlayButtonClick(!play)}>
         {play ? "Stop" : "Play"}
       </button>
-      <DrumPad
-        {...{ count }}
-        layout={[
-          { name: "cymbol", icon: "🇹🇼", beats: [true, true, true, true] },
-          { name: "bass", icon: "🛢️", beats: [true, false, false, false] },
-          { name: "snare", icon: "🥁", beats: [false, false, true, false] }
-        ]}
-      />
-      <div>Welcome to Next.js!</div>
+      <DrumPad {...{ count, layout, swapBeat }} />
     </>
   );
+};
+
+Home.getInitialProps = () => {
+  return { mockLayout1 };
 };
 
 export default Home;
