@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { signin } from "../utils/common-functions";
 import FormWrapper from "../Components/FormWrapper";
 import { useRouter } from "next/router";
-
 const Signin = ({ onRouteChange, loadUser }) => {
   const router = useRouter();
   const [signinEmail, setSigninEmail] = useState("");

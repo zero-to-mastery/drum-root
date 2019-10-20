@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-input-slider";
+import fetch from "isomorphic-unfetch";
 import DrumPad from "../Components/DrumPad";
-import { useInterval } from "../utils/common-functions";
+import { useInterval, auth } from "../utils/common-functions";
 import { getOscillator, createMetronomeOscillator } from "../utils/sounds";
-import { mockLayout1 } from "../mockData/mockLayout";
 
-const Home = ({ mockLayout1 }) => {
+const Home = ({ originalLayout }) => {
   const [tempo, setTempo] = useState(100);
   const [play, setPlay] = useState(false);
   const [count, setCount] = useState(1);
   const [audioCtx, setAudioCtx] = useState();
   const [metronome, setMetronome] = useState(false);
-  const [layout, setLayout] = useState(mockLayout1);
+  const [layout, setLayout] = useState(originalLayout);
 
   useInterval(() => {
     if (play) {
@@ -78,8 +78,24 @@ const Home = ({ mockLayout1 }) => {
   );
 };
 
-Home.getInitialProps = () => {
-  return { mockLayout1 };
+Home.getInitialProps = async ctx => {
+  const token = auth(ctx);
+  console.log({ token });
+  let originalLayout = [];
+  try {
+    const response = await fetch("http://localhost:3000/drumlayout", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token
+      }
+    });
+    console.log({ response });
+    originalLayout = await response.json();
+  } catch (e) {
+    console.log(e);
+  }
+  return { originalLayout };
 };
 
 export default Home;
