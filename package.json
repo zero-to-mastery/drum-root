@@ -39,6 +39,19 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.6",
+    "husky": ">=1",
+    "lint-staged": ">=8",
     "prettier": "^1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
