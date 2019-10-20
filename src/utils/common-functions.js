@@ -32,7 +32,8 @@ export const signout = () => {
       window.sessionStorage.removeItem("token");
       cookie.remove("token");
     })
-    .catch(err => console.log);
+    .catch(err => console.log)
+    .finally(Router.push("/signin"));
 };
 
 // https://overreacted.io/making-setinterval-declarative-with-react-hooks/
