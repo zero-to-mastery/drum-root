@@ -13,7 +13,6 @@ export const signin = async (email, password) =>
     .then(response => response.json())
     .then(data => {
       if (data.userId && data.success) {
-        window.sessionStorage.setItem("token", data.token);
         cookie.set("token", data.token, { expires: 1 });
       }
     })
@@ -27,13 +26,10 @@ export const signout = () => {
       "Content-Type": "application/json",
       Authorization: window.sessionStorage.getItem("token")
     }
-  })
-    .then(() => {
-      window.sessionStorage.removeItem("token");
-      cookie.remove("token");
-    })
-    .catch(err => console.log)
-    .finally(Router.push("/signin"));
+  }).then(() => {
+    cookie.remove("token");
+    Router.push("/signin");
+  });
 };
 
 // https://overreacted.io/making-setinterval-declarative-with-react-hooks/
