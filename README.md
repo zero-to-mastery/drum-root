@@ -30,7 +30,7 @@ A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https:/
 
 ___
 
-## Running locally in development mode
+## Running Locally in Development Mode
 
 To get started, just clone or fork the repository and run `npm install && npm run dev`:
 
@@ -40,7 +40,7 @@ To get started, just clone or fork the repository and run `npm install && npm ru
 
 Note: If you are running on Windows run install --noptional flag (i.e. `npm install --no-optional`) which will skip installing fsevents.
 
-## Building and deploying in production
+## Building and Deploying in Production
 
 If you wanted to run this site in production, you should install modules then build the site with `npm run build` and run it with `npm start`:
 
