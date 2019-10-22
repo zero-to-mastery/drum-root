@@ -1,6 +1,6 @@
 # Drum Root
 
-A React Web App for Creating and Sharing Drum Loops.
+A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https://github.com/rgavinc/drum-root-api) for Back End Service.
 
 ## Features
 - Create Drum Loops
