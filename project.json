@@ -3,7 +3,12 @@
   "tagline": "A React Web App for Creating and Sharing Drum Loops.",
   "color": "#e8c123",
   "channelName": "drum-root",
-  "desc": ["TODO: add"],
+  "desc": [
+    "A React Web App for Creating and Sharing Drum Loops.",
+    "__**Features:**__ \n:small_orange_diamond: Create Drum Loops \n:small_orange_diamond: Record Custom Sounds \n:small_orange_diamond: Save and Share Drum Loops With Others",
+    "__**Front End Tech:**__ small_blue_diamond: [React](https://reactjs.org/) - JavaScript UI Library",
+    "__**Back End Tech:**__ small_blue_diamond: [Express](https://expressjs.com/) - Web Framework for Node.js"
+  ],
   "team": [
     ["rgavinc", "Project Lead"],
     ["needed", "Front End Lead"],
@@ -12,10 +17,30 @@
     ["needed", "Database Lead"],
     ["needed", "Designer/ Styling Lead"]
   ],
-  "links": [["TODO: add", "https://github.com/zero-to-mastery"]],
-  "poi": [["TODO: add", "https://github.com/zero-to-mastery"]],
+  "links": [
+    [
+      "README.md",
+      "https://github.com/zero-to-mastery/drum-root/blob/master/README.md"
+    ],
+    [
+      "CONTRIBUTING.md",
+      "https://github.com/zero-to-mastery/drum-root/blob/master/CONTRIBUTING.md"
+    ],
+    ["Wiki", "https://github.com/zero-to-mastery/drum-root/wiki"]
+  ],
+  "poi": [
+    [
+      "README.md",
+      "https://github.com/zero-to-mastery/drum-root/blob/master/README.md"
+    ],
+    [
+      "CONTRIBUTING.md",
+      "https://github.com/zero-to-mastery/drum-root/blob/master/CONTRIBUTING.md"
+    ],
+    ["Wiki", "https://github.com/zero-to-mastery/drum-root/wiki"]
+  ],
   "tasks": {
     "title": "Trello Tasks",
-    "desc": "We use Trello to manage the tasks within this project, [here](https://trello.com/drumroot) is your invitation. Further information on how to use Trello and claim a task can be found in the [TODO: add correct link](https://github.com/zero-to-mastery) file on Github."
+    "desc": "We use Trello to manage the tasks within this project, [here](https://trello.com/drumroot) is your invitation. Further information on how to use Trello and claim a task can be found in the [CONTRIBUTING.md](https://github.com/zero-to-mastery/drum-root/blob/master/CONTRIBUTING.md) file on Github."
   }
 }
