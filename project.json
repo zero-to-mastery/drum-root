@@ -1,0 +1,21 @@
+{
+  "repoName": "drum-root",
+  "tagline": "A React Web App for Creating and Sharing Drum Loops.",
+  "color": "#e8c123",
+  "channelName": "drum-root",
+  "desc": ["TODO: add"],
+  "team": [
+    ["rgavinc", "Project Lead"],
+    ["needed", "Front End Lead"],
+    ["needed", "Back End Lead"],
+    ["needed", "QA Lead"],
+    ["needed", "Database Lead"],
+    ["needed", "Designer/ Styling Lead"]
+  ],
+  "links": [["TODO: add", "https://github.com/zero-to-mastery"]],
+  "poi": [["TODO: add", "https://github.com/zero-to-mastery"]],
+  "tasks": {
+    "title": "Trello Tasks",
+    "desc": "We use Trello to manage the tasks within this project, [here](https://trello.com/drumroot) is your invitation. Further information on how to use Trello and claim a task can be found in the [TODO: add correct link](https://github.com/zero-to-mastery) file on Github."
+  }
+}
