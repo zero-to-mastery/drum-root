@@ -3,24 +3,30 @@
 A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https://github.com/rgavinc/drum-root-api) for Back End Service.
 
 ## Features
+
 - Create Drum Loops
 - Record Custom Sounds
 - Save and Share Drum Loops With Others
 
 ## Tech
+
 ### Front End
-- [React - JavaScript UI Library](https://reactjs.org/)
-- [Next.js - Server Side Rendering](https://nextjs.org/) 
-- [Styled Components - Styling](https://www.styled-components.com/)
-- [Jest - JavaScript Testing Framework](https://jestjs.io/)(Coming Soon)
-- [Puppeteer - A Node Library for Controlling Headless Chrome or Chromium. Used for Integration Testing.](https://developers.google.com/web/tools/puppeteer)(Coming Soon)
-- [Storybook - Tool for Developing UI Components in Isolation.](https://storybook.js.org/)(Coming Soon)
+
+- [React](https://reactjs.org/) - JavaScript UI Library
+- [Next.js](https://nextjs.org/) - Server Side Rendering
+- [Styled Components](https://www.styled-components.com/) - Styling
+- [Jest](https://jestjs.io/) - JavaScript Testing Framework(Coming Soon)
+- [Puppeteer](https://developers.google.com/web/tools/puppeteer) - A Node Library for Controlling Headless Chrome or Chromium. Used for end to end Testing(Coming Soon)
+- [Storybook](https://storybook.js.org/) - Tool for Developing UI Components in Isolation(Coming Soon)
+
 ### Back End
-- [Express - Web Framework for Node.js](https://expressjs.com/)
-- [PostgreSql - Relational Database](https://www.postgresql.org/)(Coming Soon)
-- [Redis - In-Memory Data Structure Store. Used for Authorization.](https://redis.io/)(Coming Soon)
+
+- [Express](https://expressjs.com/) - Web Framework for Node.js
+- [PostgreSql](https://www.postgresql.org/) - Relational Database(Coming Soon)
+- [Redis](https://redis.io/) - In-Memory Data Structure Store used for Authorization(Coming Soon)
 
 ## Team
+
 - Project Lead - [rgavinc](https://github.com/rgavinc)
 - Front End Lead - needed
 - Back End Lead - needed
@@ -28,7 +34,7 @@ A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https:/
 - Database Lead - needed
 - Designer/ Styling Lead - needed
 
-___
+---
 
 ## Running Locally in Development Mode
 
