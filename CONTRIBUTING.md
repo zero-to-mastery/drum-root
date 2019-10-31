@@ -4,7 +4,7 @@
 
 - Fork [drum-root](https://github.com/zero-to-mastery/drum-root) (and [drum-root-api](https://github.com/zero-to-mastery/drum-root-api))
 - Add your name to the [CONTRIBUTORS.md](https://github.com/zero-to-mastery/drum-root/blob/master/CONTRIBUTORS.md) file
-- Commit your changes and create a pull request (through your forked reposistory)
+- Commit your changes and create a pull request (through your forked repository)
 - Once your PR is approved and merged you are officially a contributor! You can then begin to look for tasks to do in our [Trello boards](https://trello.com/drumroot/home)
 - Note: Just like your first contribution, you will continue to create new pull requests through your forked repository.
 
