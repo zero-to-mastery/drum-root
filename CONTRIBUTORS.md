@@ -13,3 +13,4 @@ Please follow this template:
 # Contributors
 
 - Gavin | https://github.com/rgavinc | Gavin#6391
+- Amirdlz | https://github.com/aynorica | Amirdlz#6941
