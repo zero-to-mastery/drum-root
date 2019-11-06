@@ -16,3 +16,4 @@ Please follow this template:
 - Amirdlz | https://github.com/aynorica | Amirdlz#6941
 - Yash | https://github.com/yashShelatkar | yaashShelatkar
 - Josh | https://github.com/joshtru | Josh#1595
+- Enny | https://github.com/maxcutex | Enny#5667
