@@ -15,3 +15,4 @@ Please follow this template:
 - Gavin | https://github.com/rgavinc | Gavin#6391
 - Amirdlz | https://github.com/aynorica | Amirdlz#6941
 - Yash | https://github.com/yashShelatkar | yaashShelatkar
+- Josh | https://github.com/joshtru | Josh#1595
