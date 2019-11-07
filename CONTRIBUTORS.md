@@ -23,3 +23,4 @@ Please follow this template:
 - Juho | https://github.com/leejooho77 | Juho Lee#2770
 - Diemention | https://github.com/guitarhub786 | Diemention#1534
 - Valentin | https://github.com/StanciuV | stanval#0433
+- Aneesh | https://github.com/aneesh4995 | Aneesh#9599
