@@ -21,3 +21,4 @@ Please follow this template:
 - Ryan | https://github.com/rvvergara | rvvergara#8575
 - Adewoyin | https://github.com/nucternal18 | aolausoro
 - Juho | https://github.com/leejooho77 | Juho Lee#2770
+- Diemention | https://github.com/guitarhub786 | Diemention#1534
