@@ -10,7 +10,7 @@
 
 ### When contributing to this repository, check the Trello board for available tasks.
 
-`To gain access to the Trello boards please request access through our dedicateed Discord channel`
+`To gain access to the Trello boards please request access through our dedicated Discord channel`
 
 ### If the task is:
 
