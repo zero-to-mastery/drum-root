@@ -19,3 +19,4 @@ Please follow this template:
 - Enny | https://github.com/maxcutex | Enny#5667
 - Guillaume | https://github.com/Agilulfe | Agilulfe_Edme#2996
 - Ryan | https://github.com/rvvergara | rvvergara#8575
+- Adewoyin | https://github.com/nucternal18 | aolausoro
