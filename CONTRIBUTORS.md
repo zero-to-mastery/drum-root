@@ -32,3 +32,4 @@ Please follow this template:
 - Bo | https://github.com/zbc | Bo#3729
 - BiswaViraj | https://github.com/BiswaViraj | BiswaViraj#1405
 - Kiran Nyayapati | https://github.com/kiran-nyayapati | Kiran_Nyayapati#9952
+- Lincon Kusunoki | https://github.com/linconkusunoki | Lincon Kusunoki#1682
