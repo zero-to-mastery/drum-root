@@ -20,3 +20,4 @@ Please follow this template:
 - Guillaume | https://github.com/Agilulfe | Agilulfe_Edme#2996
 - Ryan | https://github.com/rvvergara | rvvergara#8575
 - Adewoyin | https://github.com/nucternal18 | aolausoro
+- Juho | https://github.com/leejooho77 | Juho Lee#2770
