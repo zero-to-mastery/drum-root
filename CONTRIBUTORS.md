@@ -18,3 +18,4 @@ Please follow this template:
 - Josh | https://github.com/joshtru | Josh#1595
 - Enny | https://github.com/maxcutex | Enny#5667
 - Guillaume | https://github.com/Agilulfe | Agilulfe_Edme#2996
+- Ryan | https://github.com/rvvergara | RyanV
