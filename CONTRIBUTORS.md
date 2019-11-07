@@ -25,3 +25,4 @@ Please follow this template:
 - Abhinav | https://github.com/AbsMechanik | AbsMechanik#5535
 - Valentin | https://github.com/StanciuV | stanval#0433
 - Aneesh | https://github.com/aneesh4995 | Aneesh#9599
+- Giuliano | https://github.com/giulianocernada | giulianomax#9459
