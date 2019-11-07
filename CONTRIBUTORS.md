@@ -28,5 +28,6 @@ Please follow this template:
 - Abhinav | https://github.com/AbsMechanik | AbsMechanik#5535
 - Valentin | https://github.com/StanciuV | stanval#0433
 - Aneesh | https://github.com/aneesh4995 | Aneesh#9599
+- Bo | https://github.com/zbc | Bo#3729
 - BiswaViraj | https://github.com/BiswaViraj | BiswaViraj#1405
 - Kiran Nyayapati | https://github.com/kiran-nyayapati | Kiran_Nyayapati#9952
