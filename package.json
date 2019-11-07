@@ -41,6 +41,9 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.6",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.3",
     "husky": ">=1",
     "lint-staged": ">=8",
     "prettier": "^1.18.2"
