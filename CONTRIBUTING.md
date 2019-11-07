@@ -10,6 +10,8 @@
 
 ### When contributing to this repository, check the Trello board for available tasks.
 
+`To gain access to the Trello boards please request access through our dedicateed Discord channel`
+
 ### If the task is:
 
 - **Available**: Go ahead and _claim the task_. You can assign it to yourself by editing your name into the card and moving it into the `Doing` column.
