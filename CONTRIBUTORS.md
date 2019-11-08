@@ -34,3 +34,4 @@ Please follow this template:
 - Kiran Nyayapati | https://github.com/kiran-nyayapati | Kiran_Nyayapati#9952
 - Lincon Kusunoki | https://github.com/linconkusunoki | Lincon Kusunoki#1682
 - Aebbie Rontos | https://github.com/aevi1103 | aevi1103#6718
+- Xhawk | https://github.com/sameerrM | hawk#1682
