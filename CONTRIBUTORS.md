@@ -35,3 +35,4 @@ Please follow this template:
 - Lincon Kusunoki | https://github.com/linconkusunoki | Lincon Kusunoki#1682
 - Aebbie Rontos | https://github.com/aevi1103 | aevi1103#6718
 - yitzhak bloy | https://github.com/yitzhak-bloy | ytzhak#5668
+- Ayush Singh Kushwaha| https://github.com/Ayush909 | TheAyushThing#0552
