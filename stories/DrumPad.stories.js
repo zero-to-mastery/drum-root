@@ -1,13 +1,8 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import "bootstrap/dist/css/bootstrap.css";
-import {
-  withKnobs,
-  text,
-  boolean,
-  number,
-  array
-} from "@storybook/addon-knobs";
+import { withKnobs, number, array } from "@storybook/addon-knobs";
+import DrumPad from "../src/Components/DrumPad/index";
 
 const stories = storiesOf("DrumPad", module);
 
@@ -17,39 +12,26 @@ stories.add("Drum pad style", () => {
     height: "30px"
   };
   // lines 15 to 25 exist only for testing no need to implement in the main code
-  const tableRowLabel = "trNum";
-  const tableColLabel = "tdNum";
-  const defaultTableRow = ["Red", "Blue"];
-  const defaultTableCol = ["Red"];
-  let tableRow = array(tableRowLabel, defaultTableRow);
-  let tableCol = array(tableColLabel, defaultTableCol);
-  const label = "has beat?";
-  const hasBeatDefault = false;
-  const hasBeat = boolean(label, hasBeatDefault); // for filling the div with something
+  const tableNumber = "tableNumber";
+  const layoutProps = "layout";
+  const countDefault = 1;
+  const layoutArray = [
+    {
+      name: "hiHat",
+      icon: "🇹🇼",
+      beats: [true, true, true, true]
+    },
+    {
+      name: "bass",
+      icon: "🛢️",
+      beats: [true, false, false, false]
+    },
+    { name: "snare", icon: "🥁", beats: [false, false, true, false] }
+  ];
+  let count = number(tableNumber, countDefault);
+  let layout = array(layoutProps, layoutArray);
 
-  return (
-    <div className="container ">
-      <table className="table table-dark table-bordered w-50 mx-auto">
-        <tbody>
-          {tableRow.map((
-            data1 // you can add any functionality for tr`s
-          ) => (
-            <tr key={data1}>
-              {tableCol.map((
-                data2 // // you can add any functionality for td`s
-              ) => (
-                <td key={data2}>
-                  <div style={divStyle} className="mx-auto">
-                    {hasBeat ? data2 : ""}
-                  </div>
-                </td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
+  return <DrumPad {...{ count, layout }} />;
 });
 
 stories.addDecorator(withKnobs);
