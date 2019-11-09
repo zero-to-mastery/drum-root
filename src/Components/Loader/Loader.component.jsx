@@ -1,79 +1,68 @@
 import React from 'react'
 import styled from 'styled-components'
+import { keyframes } from '@emotion/core'
+
+const rotateWrapp = keyframes`
+  100% {
+    transform: rotate(360deg);
+  }
+`
+
+const rotateDot = keyframes`
+ 80%, 100% {
+    transform: rotate(360deg); 
+  } 
+`
+
+const dotBefore = keyframes`
+  50% {
+    transform: scale(0.4); 
+  } 100%, 0% {
+    transform: scale(1.0); 
+  } 
+`
 
 const Wrapper = styled.div`
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   position: relative;
-  animation: sk-chase 2.5s infinite linear both;
-  
-  .sk-chase {
-  width: 20px;
-  height: 20px;
-  position: relative;
-  animation: sk-chase 2.5s infinite linear both;
-}
+  animation:${rotateWrapp} 2.5s infinite linear both;
+`
 
-.sk-chase-dot {
+const SkChaseDot = styled.div`
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
   top: 0; 
-  animation: sk-chase-dot 2.0s infinite ease-in-out both; 
-}
+  animation: ${rotateDot} 2.0s infinite ease-in-out both; 
+  animation-delay: ${props => props.animationDelay};
 
-.sk-chase-dot:before {
+&:before {
   content: '';
   display: block;
   width: 25%;
   height: 25%;
   background-color: red;
   border-radius: 100%;
-  animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
-}
-
-.sk-chase-dot:nth-child(1) { animation-delay: -1.1s; }
-.sk-chase-dot:nth-child(2) { animation-delay: -1.0s; }
-.sk-chase-dot:nth-child(3) { animation-delay: -0.9s; }
-.sk-chase-dot:nth-child(4) { animation-delay: -0.8s; }
-.sk-chase-dot:nth-child(5) { animation-delay: -0.7s; }
-.sk-chase-dot:nth-child(6) { animation-delay: -0.6s; }
-.sk-chase-dot:nth-child(1):before { animation-delay: -1.1s; }
-.sk-chase-dot:nth-child(2):before { animation-delay: -1.0s; }
-.sk-chase-dot:nth-child(3):before { animation-delay: -0.9s; }
-.sk-chase-dot:nth-child(4):before { animation-delay: -0.8s; }
-.sk-chase-dot:nth-child(5):before { animation-delay: -0.7s; }
-.sk-chase-dot:nth-child(6):before { animation-delay: -0.6s; }
-
-@keyframes sk-chase {
-  100% { transform: rotate(360deg); } 
-}
-
-@keyframes sk-chase-dot {
-  80%, 100% { transform: rotate(360deg); } 
-}
-
-@keyframes sk-chase-dot-before {
-  50% {
-    transform: scale(0.4); 
-  } 100%, 0% {
-    transform: scale(1.0); 
-  } 
+  animation: ${dotBefore} 2.0s infinite ease-in-out both;
+  animation-delay: ${props => props.animationDelay};
 }
 `
 
+
+
 const Loader = () => {
-    return (
-        <Wrapper>
-            <div className="sk-chase-dot"></div>
-            <div className="sk-chase-dot"></div>
-            <div className="sk-chase-dot"></div>
-            <div className="sk-chase-dot"></div>
-            <div className="sk-chase-dot"></div>
-            <div className="sk-chase-dot"></div>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <SkChaseDot animationDelay="-1.1s" />
+      <SkChaseDot animationDelay="-1.0s" />
+      <SkChaseDot animationDelay="-0.9s" />
+      <SkChaseDot animationDelay="-0.8s" />
+      <SkChaseDot animationDelay="-0.7s" />
+      <SkChaseDot animationDelay="-0.6s" />
+    </Wrapper>
+  )
 }
 
 export default Loader
