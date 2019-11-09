@@ -5,10 +5,12 @@
 - Fork [drum-root](https://github.com/zero-to-mastery/drum-root) (and [drum-root-api](https://github.com/zero-to-mastery/drum-root-api))
 - Add your name to the [CONTRIBUTORS.md](https://github.com/zero-to-mastery/drum-root/blob/master/CONTRIBUTORS.md) file
 - Commit your changes and create a pull request (through your forked repository)
-- Once your PR is approved and merged you are officially a contributor! You can then begin to look for tasks to do in our [Trello boards](https://trello.com/drumroot/home)
+- Once your PR is approved and merged you are officially a contributor! You can then begin to look for tasks to do in our Trello boards. To gain access to these boards, request an invitation in our Discord channel.
 - Note: Just like your first contribution, you will continue to create new pull requests through your forked repository.
 
 ### When contributing to this repository, check the Trello board for available tasks.
+
+`To gain access to the Trello boards please request access through our dedicated Discord channel`
 
 ### If the task is:
 
