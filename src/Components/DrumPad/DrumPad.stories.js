@@ -4,13 +4,11 @@ import "bootstrap/dist/css/bootstrap.css";
 import { withKnobs, number, array } from "@storybook/addon-knobs";
 import DrumPad from "./index";
 
-const stories = storiesOf("DrumPad", module);
-
-stories.add("Drum pad style", () => {
-  const tableNumber = "tableNumber";
-  const layoutProps = "layout";
-  const countDefault = 1;
-  const layoutArray = [
+const knobValues = {
+  tableNumber: "tableNumber",
+  layoutProps: "layout",
+  countDefault: 1,
+  layoutArray: [
     {
       name: "hiHat",
       icon: "🇹🇼",
@@ -21,8 +19,18 @@ stories.add("Drum pad style", () => {
       icon: "🛢️",
       beats: [true, false, false, false]
     },
-    { name: "snare", icon: "🥁", beats: [false, false, true, false] }
-  ];
+    {
+      name: "snare",
+      icon: "🥁",
+      beats: [false, false, true, false]
+    }
+  ]
+};
+
+const stories = storiesOf("DrumPad", module);
+
+stories.add("Drum pad style", () => {
+  const { tableNumber, countDefault, layoutProps, layoutArray } = knobValues;
   let count = number(tableNumber, countDefault);
   let layout = array(layoutProps, layoutArray);
 
