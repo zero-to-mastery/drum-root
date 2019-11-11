@@ -39,5 +39,6 @@ Please follow this template:
 - Xhawk | https://github.com/sameerrM | hawk#1682
 - yitzhak bloy | https://github.com/yitzhak-bloy | ytzhak#5668
 - Ayush Singh Kushwaha| https://github.com/Ayush909 | TheAyushThing#0552
+- Adenekan Wonderful | https://github.com/adenekan41 | codewonders#8148 
 - Hankles | https://github.com/hankles | hankles\_#4107
 - Pramod Singh | https://github.com/prmdsngh | pramod Singh#1495
