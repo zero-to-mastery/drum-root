@@ -4,7 +4,6 @@ import styled, { createGlobalStyle } from "styled-components";
 import Link from "next/link";
 import { signout } from "../utils/common-functions";
 import ErrorBoundary from "../Components/ErrorBoundary";
-import Logo from "../resources/icons/snare-drum.svg";
 
 const BodyStyling = createGlobalStyle`
   body {
@@ -40,7 +39,6 @@ class MyApp extends App {
         <BodyStyling />
         <PageWrapper>
           <header>
-            <Logo />
             <HeaderStyling>
               <Link href="/">
                 <a href="/">
