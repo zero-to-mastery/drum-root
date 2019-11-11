@@ -54,3 +54,9 @@ If you wanted to run this site in production, you should install modules then bu
     npm start
 
 You should run `npm run build` again any time you make changes to the site.
+
+## Runing Storybook
+
+Storybook is a way to view the compoonent's in isolation. To view Drum Root's storybook run the following command:
+
+    npm run storyboook
