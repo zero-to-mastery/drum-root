@@ -2,8 +2,8 @@
   "env": {
     "browser": true,
     "es6": true,
-    "node": true,
-    "jest": true
+    "jest": true,
+    "node": true
   },
   "extends": ["plugin:react/recommended"],
   "globals": {
@@ -20,7 +20,6 @@
   "plugins": ["react"],
   "rules": {
     "quotes": ["error", "double"],
-    "semi": ["error", "always"],
-    "react/prop-types": 0
+    "semi": ["error", "always"]
   }
 }
