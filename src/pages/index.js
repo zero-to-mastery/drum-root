@@ -3,6 +3,7 @@ import Slider from "react-input-slider";
 import fetch from "isomorphic-unfetch";
 import Error from "../Components/Error";
 import DrumPad from "../Components/DrumPad";
+import DrumLoopTile from "../Components/DrumLoopTile/index";
 import { useInterval, auth } from "../utils/common-functions";
 import { getOscillator, createMetronomeOscillator } from "../utils/sounds";
 import { Helmet } from "react-helmet";
@@ -81,6 +82,8 @@ const Home = ({ originalLayout, error }) => {
         {play ? "Stop" : "Play"}
       </button>
       <DrumPad {...{ count, layout, swapBeat }} />
+      <hr />
+      <DrumLoopTile title="Awesome Beats" href="http://www.beats.com" />
     </>
   );
 };
