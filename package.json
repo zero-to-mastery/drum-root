@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@svgr/webpack": "^4.3.3",
     "dotenv": "^8.1.0",
     "is-node": "^1.0.2",
     "isomorphic-unfetch": "^3.0.0",
