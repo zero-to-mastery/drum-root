@@ -38,9 +38,10 @@ A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https:/
 
 ## Running Locally in Development Mode
 
-To get started, just clone or fork the repository and run `npm install && npm run dev`:
+The backend code should be running in order for the front end to behave correctly. See [Drum Root API](https://github.com/rgavinc/drum-root-api).
 
-    git clone https://github.com/rgavinc/drum-root.git
+To get started with the front end, fork the repository and run the following commands:
+
     npm install
     npm run dev
 
