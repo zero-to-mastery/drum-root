@@ -1,10 +1,10 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { mount } from "enzyme";
 import Input from "./index";
 
 describe("Input component", () => {
   test("should render properly", () => {
-    const wrapper = shallow(<Input />);
+    const wrapper = mount(<Input />);
     expect(wrapper.exists()).toBe(true);
   });
 });
