@@ -32,7 +32,7 @@ A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https:/
 - Back End Lead - [yashShelatkar](https://github.com/yashShelatkar)
 - QA Lead - needed
 - Database Lead - [yashShelatkar](https://github.com/yashShelatkar)
-- Designer/ Styling Lead - needed
+- Designer/ Styling Lead - [linconkusunoki](https://github.com/linconkusunoki)
 
 ---
 
