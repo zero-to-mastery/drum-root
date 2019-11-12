@@ -42,16 +42,16 @@ const Home = ({ originalLayout, error }) => {
   const addNewBeat = () => {
     const newLayout = [...layout];
     if (newLayout[0].beats.length === 16) return;
-    newLayout.forEach(e => {
-      e.beats.push(false);
+    newLayout.forEach(row => {
+      row.beats.push(false);
     });
     setLayout(newLayout);
   };
   const rmvBeat = () => {
     const newLayout = [...layout];
     if (newLayout[0].beats.length === 4) return;
-    newLayout.forEach(e => {
-      e.beats.pop();
+    newLayout.forEach(row => {
+      row.beats.pop();
     });
     setLayout(newLayout);
   };
