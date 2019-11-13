@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@storybook/addon-knobs": "^5.2.5",
+    "bootstrap": "^4.3.1",
     "dotenv": "^8.1.0",
     "is-node": "^1.0.2",
     "isomorphic-unfetch": "^3.0.0",
@@ -23,7 +25,9 @@
     "start": "next start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "test:e2e": "jest -c jest-e2e.config.js"
+    "test:e2e": "jest -c jest-e2e.config.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,9 +45,16 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.7.0",
+    "@storybook/addon-actions": "^5.2.5",
+    "@storybook/addon-links": "^5.2.5",
+    "@storybook/addons": "^5.2.5",
+    "@storybook/react": "^5.2.5",
     "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
     "babel-plugin-styled-components": "^1.10.6",
     "enzyme": "^3.10.0",
+    "enzyme-adapter-react-15": "^1.4.1",
     "enzyme-adapter-react-16": "^1.15.1",
     "enzyme-to-json": "^3.4.3",
     "eslint": "^6.6.0",

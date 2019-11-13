@@ -28,15 +28,16 @@ A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https:/
 ## Team
 
 - Project Lead - [rgavinc](https://github.com/rgavinc)
-- Front End Lead - needed
+- Front End Lead - [Dhaval](https://github.com/Dhaval1403)
 - Back End Lead - [yashShelatkar](https://github.com/yashShelatkar)
-- QA Lead - needed
+- QA Lead - [rvvergara](https://github.com/rvvergara)
 - Database Lead - [yashShelatkar](https://github.com/yashShelatkar)
-- Designer/ Styling Lead - needed
+- Designer/ Styling Lead - [linconkusunoki](https://github.com/linconkusunoki)
 
 ---
 
 ## Running Locally in Development Mode
+
 The backend code should be running in order for the front end to behave correctly. See [Drum Root API](https://github.com/rgavinc/drum-root-api).
 
 To get started with the front end, fork the repository and run the following commands:
@@ -53,3 +54,9 @@ If you wanted to run this site in production, you should install modules then bu
     npm start
 
 You should run `npm run build` again any time you make changes to the site.
+
+## Runing Storybook
+
+Storybook is a way to view the compoonent's in isolation. To view Drum Root's storybook run the following command:
+
+    npm run storyboook
