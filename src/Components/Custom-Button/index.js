@@ -11,13 +11,11 @@ const Button = styled.button`
   border-radius: 0.2rem;
 `;
 
-const CustomButton = ({ title, className, color }) => {
-  return (
-    <Button color={color} className={className}>
-      {title}
-    </Button>
-  );
-};
+const CustomButton = ({ title, className, color }) => (
+  <Button color={color} className={className}>
+    {title}
+  </Button>
+);
 
 CustomButton.propTypes = {
   title: PropTypes.string,
