@@ -3,6 +3,7 @@ import Slider from "react-input-slider";
 import fetch from "isomorphic-unfetch";
 import Error from "../Components/Error";
 import DrumPad from "../Components/DrumPad";
+import SoundUploader from "../Components/SoundUploader";
 import { useInterval, auth } from "../utils/common-functions";
 import { getOscillator, createMetronomeOscillator } from "../utils/sounds";
 import { Helmet } from "react-helmet";
@@ -64,6 +65,7 @@ const Home = ({ originalLayout, error }) => {
       <Helmet>
         <title>Drum Root</title>
       </Helmet>
+      <SoundUploader />
       <p>Count: {count}</p>
       <p>Tempo: {tempo}</p>
       <button onClick={() => setMetronome(!metronome)}>
