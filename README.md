@@ -15,9 +15,9 @@ A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https:/
 - [React](https://reactjs.org/) - JavaScript UI Library
 - [Next.js](https://nextjs.org/) - Server Side Rendering
 - [Styled Components](https://www.styled-components.com/) - Styling
-- [Jest](https://jestjs.io/) - JavaScript Testing Framework(Coming Soon)
+- [Jest](https://jestjs.io/) - JavaScript Testing Framework
 - [Puppeteer](https://developers.google.com/web/tools/puppeteer) - A Node Library for Controlling Headless Chrome or Chromium. Used for end to end Testing(Coming Soon)
-- [Storybook](https://storybook.js.org/) - Tool for Developing UI Components in Isolation(Coming Soon)
+- [Storybook](https://storybook.js.org/) - Tool for Developing UI Components in Isolation
 
 ### Back End
 
