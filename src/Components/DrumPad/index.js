@@ -34,7 +34,7 @@ const DrumPad = ({ count, layout, swapBeat }) => {
               <td
                 key={beatNum}
                 onClick={() => {
-                  console.log({ rowNum, beatNum });
+                  //console.log({ rowNum, beatNum, hasBeat });
                   swapBeat(rowNum, beatNum);
                 }}
               >
