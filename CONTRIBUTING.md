@@ -17,7 +17,7 @@
 - **Available**: Go ahead and _claim the task_. You can assign it to yourself by editing your name into the card and moving it into the `Doing` column.
 - **Claimed**: If someone else has claimed the task, speak with them or one of the project admin.
 - **In Code Review**: You should move your task into the `Code Review` column after you have created a Pull Request for the task. Keep checking your Pull Request in case a team member asks for some changes to be made.
-- **Non-Existant**: If the feature does not appear on trello, _discuss it on Discord or speak with a project admin_. This is to ensure, everyone has the chance to get involved without waiting their time or rushing to add the feature.
+- **Non-Existant**: If the feature does not appear on trello, _discuss it on Discord or speak with a project admin_. This is to ensure, everyone has the chance to get involved without wasting their time or rushing to add the feature.
 
 ## Trello Columns
 
@@ -27,7 +27,7 @@ Current things that are approved to work on and can be assigned or claimed.
 
 ### Doing
 
-Drag your task into this section, when you start working on it.
+Drag your task into this section and add yourself as a member when you start working on it.
 
 ### Code Review
 
