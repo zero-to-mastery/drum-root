@@ -1,10 +1,10 @@
 import React from "react";
 import { mount } from "enzyme";
-import FormWrapper from "./index";
+import Input from "./index";
 
-describe("FormWrapper component", () => {
+describe("Input component", () => {
   test("should render properly", () => {
-    const wrapper = mount(<FormWrapper onSubmit={() => {}} />);
+    const wrapper = mount(<Input />);
     expect(wrapper.exists()).toBe(true);
   });
 });

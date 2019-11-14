@@ -6,7 +6,7 @@ const Table = styled.table`
   border-spacing: 0px;
   &,
   th,
-  td {
+  git td {
     padding: 5px;
     border: 1px solid black;
   }

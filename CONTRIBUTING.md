@@ -27,7 +27,7 @@ Current things that are approved to work on and can be assigned or claimed.
 
 ### Doing
 
-Drag your task into this section, when you start working on it.
+Drag your task into this section and add yourself as a member when you start working on it.
 
 ### Code Review
 
