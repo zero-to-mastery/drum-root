@@ -44,3 +44,5 @@ Please follow this template:
 - Pramod Singh | https://github.com/prmdsngh | pramod Singh#1495
 - Kervin Vasquez | https://github.com/kervin5 | Kervin5#3175
 - Parveen Kumar | https://github.com/parveenmittal1 | mysterious_code
+- Cliff | https://github.com/cliftontc | cliftontc#8746
+- Marco Seoane | https://github.com/marcoseoane | dustyfrxsh#1226 
