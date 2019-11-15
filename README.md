@@ -55,8 +55,22 @@ If you wanted to run this site in production, you should install modules then bu
 
 You should run `npm run build` again any time you make changes to the site.
 
-## Runing Storybook
+## Running Storybook
 
 Storybook is a way to view the compoonent's in isolation. To view Drum Root's storybook run the following command:
 
     npm run storyboook
+
+## Running Test in Development Mode
+
+If you are the first time to start the tests, run the following command to ensure all related packages installed:
+
+    npm install
+
+To get started with Unit Test, run the following command:
+
+    npm run test
+
+To get started with Integration/End to End Test, run the following command:
+
+    npm run test:e2e
