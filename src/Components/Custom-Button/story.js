@@ -1,36 +1,28 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
+import { withKnobs, color, text } from "@storybook/addon-knobs";
+// import { action } from "@storybook/addon-actions";
 import CustomButton from "./index";
 
-export const defaultButton = {
-  color: "#C13F3F",
-  className: "",
-  title: "Custom Button",
-  bgColor: "transparent"
-};
+// export const defaultButton = {
+//   color: "#C13F3F",
+//   className: "",
+//   title: "Custom Button",
+//   bgColor: "transparent"
+// };
 
-export const primaryButton = {
-  color: "#540000",
-  className: "",
-  title: "Custom Button",
-  bgColor: "#E86F6F"
-};
+const returnKnobs = () => ({
+  color: color("Color"),
+  className: text("Class"),
+  title: text("Button text"),
+  bgColor: color("Background Color")
+  // const defaultValue = '#ff00ff';
+  // const value = color(defaultValue);
+});
 
 storiesOf("CustomButton", module)
-  .add("Default", () => (
-    <CustomButton
-      color={defaultButton.color}
-      className={defaultButton.className}
-      title={defaultButton.title}
-      bgColor={defaultButton.bgColor}
-    />
-  ))
-  .add("Primary", () => (
-    <CustomButton
-      color={primaryButton.color}
-      className={primaryButton.className}
-      title={primaryButton.title}
-      bgColor={primaryButton.bgColor}
-    />
-  ));
+  .addDecorator(withKnobs)
+  .add("Default", () => {
+    const knobs = returnKnobs();
+    return <CustomButton {...knobs} />;
+  });

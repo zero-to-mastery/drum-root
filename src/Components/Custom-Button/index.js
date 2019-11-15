@@ -21,8 +21,8 @@ const CustomButton = ({ title, className, color, bgColor }) => (
 CustomButton.propTypes = {
   title: PropTypes.string.isRequired,
   className: PropTypes.string,
-  color: PropTypes.string.isRequired,
-  bgColor: PropTypes.string.isRequired
+  color: PropTypes.string,
+  bgColor: PropTypes.string
 };
 
 export default CustomButton;
