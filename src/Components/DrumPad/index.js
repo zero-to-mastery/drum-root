@@ -6,7 +6,7 @@ const Table = styled.table`
   border-spacing: 0px;
   &,
   th,
-  td {
+  git td {
     padding: 5px;
     border: 1px solid black;
   }
@@ -34,7 +34,7 @@ const DrumPad = ({ count, layout, swapBeat }) => {
               <td
                 key={beatNum}
                 onClick={() => {
-                  console.log({ rowNum, beatNum });
+                  //console.log({ rowNum, beatNum, hasBeat });
                   swapBeat(rowNum, beatNum);
                 }}
               >
