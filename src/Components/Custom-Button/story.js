@@ -4,10 +4,10 @@ import { withKnobs, color, text } from "@storybook/addon-knobs";
 import CustomButton from "./index";
 
 const returnKnobs = () => ({
-  color: color("Color"),
-  className: text("Class"),
-  title: text("Button text"),
-  bgColor: color("Background Color")
+  color: color("Color", "#BADA55"),
+  className: text("Class", "Assigned class"),
+  title: text("Button text", "Default button text"),
+  bgColor: color("Fill Color", "transparent")
 });
 
 storiesOf("CustomButton", module)
