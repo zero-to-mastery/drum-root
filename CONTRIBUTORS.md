@@ -46,3 +46,4 @@ Please follow this template:
 - Parveen Kumar | https://github.com/parveenmittal1 | mysterious_code
 - Cliff | https://github.com/cliftontc | cliftontc#8746
 - Marco Seoane | https://github.com/marcoseoane | dustyfrxsh#1226 
+- Aman Saharan | https://github.com/amansaharan | amansaharan#0888
