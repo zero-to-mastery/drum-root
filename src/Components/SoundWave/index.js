@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
-function SoundWave({ src, waveColor, progressColor }) {
+const SoundWave = ({ audioFile, waveColor, progressColor }) => {
   const waveFormRef = useRef(null);
   const waveSurferRef = useRef(null);
   const [isPlay, setIsPlay] = useState(false);
@@ -12,13 +12,13 @@ function SoundWave({ src, waveColor, progressColor }) {
       waveColor,
       progressColor
     });
-    waveSurferRef.current.load(src);
+    waveSurferRef.current.load(audioFile);
     return () => waveSurferRef.current.destroy();
   }, []);
 
   const handlePlayAndPause = () => {
     waveSurferRef.current.playPause();
-    setIsPlay(isPlay === true ? false : true);
+    setIsPlay(!isPlay);
   };
 
   return (
@@ -27,10 +27,10 @@ function SoundWave({ src, waveColor, progressColor }) {
       <div ref={waveFormRef} />
     </>
   );
-}
+};
 
 SoundWave.propTypes = {
-  src: PropTypes.string.isRequired,
+  audioFile: PropTypes.string.isRequired,
   waveColor: PropTypes.string,
   progressColor: PropTypes.string
 };
