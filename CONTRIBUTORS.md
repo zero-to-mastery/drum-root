@@ -45,3 +45,6 @@ Please follow this template:
 - Kervin Vasquez | https://github.com/kervin5 | Kervin5#3175
 - Parveen Kumar | https://github.com/parveenmittal1 | mysterious_code
 - Cliff | https://github.com/cliftontc | cliftontc#8746
+- Marco Seoane | https://github.com/marcoseoane | dustyfrxsh#1226 
+- Aman Saharan | https://github.com/amansaharan | amansaharan#0888
+- Vishnu Prasad P S | https://github.com/vishnup95 | vishnup95
