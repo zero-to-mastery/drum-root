@@ -7,7 +7,7 @@ import soundFile from "../../resources/audio/testSound.mp3";
 const returnKnobs = () => ({
   waveColor: color("Wave Color", "#333333"),
   progressColor: color("Progress Color", "#DE6A08"),
-  audioFile: files("Audio Files", ".mp3", soundFile)
+  audioFile: files("Audio File", ".mp3", soundFile)
 });
 
 storiesOf("SoundWave", module)
