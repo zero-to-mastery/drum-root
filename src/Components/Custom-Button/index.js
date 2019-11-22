@@ -9,18 +9,20 @@ const Button = styled.button`
   padding: 0.25rem 1rem;
   border: 0.2rem solid ${props => (props.color ? props.color : "#000")};
   border-radius: 0.2rem;
+  background-color: ${props => (props.bgColor ? props.bgColor : "#000")};
 `;
 
-const CustomButton = ({ title, className, color }) => (
-  <Button color={color} className={className}>
+const CustomButton = ({ title, className, color, bgColor }) => (
+  <Button color={color} className={className} bgColor={bgColor}>
     {title}
   </Button>
 );
 
 CustomButton.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   className: PropTypes.string,
-  color: PropTypes.string
+  color: PropTypes.string,
+  bgColor: PropTypes.string
 };
 
 export default CustomButton;
