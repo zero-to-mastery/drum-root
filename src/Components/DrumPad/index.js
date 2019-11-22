@@ -22,11 +22,14 @@ const Table = styled.table`
   td:nth-of-type(${({ count }) => count}) {
     background-color: yellow;
   }
+  td:nth-of-type(${({ beatsMeasure }) => beatsMeasure}n) {
+    border-right: 2px solid black;
+  }
 `;
 
-const DrumPad = ({ count, layout, swapBeat }) => {
+const DrumPad = ({ count, layout, swapBeat, beatsMeasure }) => {
   return (
-    <Table {...{ count }}>
+    <Table {...{ count, beatsMeasure }}>
       <tbody>
         {layout.map(({ name, icon, beats }, rowNum) => (
           <tr key={name} onClick={() => console.log("hello")}>
