@@ -12,9 +12,9 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const PlayPauseButton = ({ isPlay = true, color, size = 48, ...props }) => {
+const PlayPauseButton = ({ isPlay, color, size = 48, ...rest }) => {
   return (
-    <Button {...props} color={color}>
+    <Button {...rest} color={color}>
       {isPlay ? <PlayCircle size={size} /> : <PauseCircle size={size} />}
     </Button>
   );
