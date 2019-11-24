@@ -2,22 +2,30 @@ import React, { useRef, useState } from "react";
 import styled from "styled-components";
 
 const FileInput = styled.input``;
+const FileErrorSpan = styled.span`
+  color: red;
+`;
 
 const SoundUploader = ({}) => {
   const inputEl = useRef(null);
+  const [fileError, setFileError] = useState(false);
+  const errorDuration = 2000;
+  const errorTimeout = () =>
+    setTimeout(() => setFileError(false), errorDuration);
 
   const uploadSound = event => {
     try {
       const file = event.target.files[0];
       if (file.size > 1000000) {
-        // possibly change this to a flash-message for better UX/UI in the future
-        alert("File size must be less than 1MB");
+        setFileError("File size must not exceed 1MB");
+        errorTimeout();
         inputEl.current.value = "";
       } else {
         // add sound to a container component that stores users custom sounds??
       }
     } catch (err) {
-      alert("Something went wrong with file upload");
+      setFileError("Something went wrong with file upload");
+      errorTimeout();
     }
   };
 
@@ -30,6 +38,7 @@ const SoundUploader = ({}) => {
         accept=".mp3,.wav"
         onChange={uploadSound}
       />
+      {fileError && <FileErrorSpan>{fileError}</FileErrorSpan>}
     </div>
   );
 };
