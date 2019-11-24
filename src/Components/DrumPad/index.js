@@ -8,7 +8,7 @@ const Table = styled.table`
   th,
   git td {
     padding: 5px;
-    border: 1px solid black;
+    border: 0.125rem solid black;
   }
   td {
     width: 2rem;
