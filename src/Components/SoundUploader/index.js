@@ -6,7 +6,7 @@ const FileErrorSpan = styled.span`
   color: red;
 `;
 
-const SoundUploader = ({}) => {
+const SoundUploader = () => {
   const inputEl = useRef(null);
   const [fileError, setFileError] = useState(false);
   const errorDuration = 2000;
