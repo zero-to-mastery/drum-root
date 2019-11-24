@@ -18,7 +18,6 @@ const Home = ({ originalLayout, error }) => {
 
   useInterval(() => {
     if (play) {
-      setCount(count => (count === 4 ? 1 : count + 1));
       playNote();
     }
   }, 1000 * (60 / tempo));
@@ -41,10 +40,29 @@ const Home = ({ originalLayout, error }) => {
     setLayout(newLayout);
   };
 
+  const addNewBeat = () => {
+    const newLayout = [...layout];
+    if (newLayout[0].beats.length === 16) return;
+    newLayout.forEach(row => {
+      row.beats.push(false);
+    });
+    setLayout(newLayout);
+  };
+  const rmvBeat = () => {
+    const newLayout = [...layout];
+    if (newLayout[0].beats.length === 4) return;
+    newLayout.forEach(row => {
+      row.beats.pop();
+    });
+    setLayout(newLayout);
+  };
+
   const playNote = () => {
     const metranomeSound = createMetronomeOscillator(audioCtx);
+    let val = count === layout[0].beats.length ? 1 : count + 1;
+    setCount(val);
     const layoutNotes = layout.map(
-      ({ beats, name }) => beats[count - 1] && getOscillator(audioCtx, name)
+      ({ beats, name }) => beats[val - 1] && getOscillator(audioCtx, name)
     );
     layoutNotes.forEach(note => {
       if (note) note.start();
@@ -71,6 +89,8 @@ const Home = ({ originalLayout, error }) => {
       <button onClick={() => setMetronome(!metronome)}>
         {metronome ? "Turn off metronome" : "Turn on metronome"}
       </button>
+      <input type="button" value="add new beat" onClick={() => addNewBeat()} />
+      <input type="button" value="remove beat" onClick={() => rmvBeat()} />
       <hr />
       <Slider
         axis="x"
