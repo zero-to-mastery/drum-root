@@ -3,8 +3,14 @@ import Slider from "react-input-slider";
 import fetch from "isomorphic-unfetch";
 import Error from "../Components/Error";
 import DrumPad from "../Components/DrumPad";
+import TimeSignature from "../Components/TimeSignature/timeSignature";
+
 import { useInterval, auth } from "../utils/common-functions";
-import { getOscillator, createMetronomeOscillator } from "../utils/sounds";
+import {
+  getOscillator,
+  createMetronomeOscillator,
+  createMetronomeOscillatorB1
+} from "../utils/sounds";
 import { Helmet } from "react-helmet";
 
 const Home = ({ originalLayout, error }) => {
@@ -14,6 +20,8 @@ const Home = ({ originalLayout, error }) => {
   const [audioCtx, setAudioCtx] = useState();
   const [metronome, setMetronome] = useState(false);
   const [layout, setLayout] = useState(originalLayout);
+  const [beatsMeasure, setBeatsMeasure] = useState(4);
+  const [beatDivision, setBeatDivision] = useState(4);
 
   useInterval(() => {
     if (play) {
@@ -57,6 +65,7 @@ const Home = ({ originalLayout, error }) => {
   };
 
   const playNote = () => {
+    const metranomeSoundB1 = createMetronomeOscillatorB1(audioCtx);
     const metranomeSound = createMetronomeOscillator(audioCtx);
     let val = count === layout[0].beats.length ? 1 : count + 1;
     setCount(val);
@@ -66,9 +75,21 @@ const Home = ({ originalLayout, error }) => {
     layoutNotes.forEach(note => {
       if (note) note.start();
     });
-    if (metronome) metranomeSound.start();
+    if (metronome) {
+      if (val % beatsMeasure === 1) {
+        metranomeSoundB1.start();
+      } else {
+        metranomeSound.start();
+      }
+    }
     setTimeout(() => {
-      if (metronome) metranomeSound.stop();
+      if (metronome) {
+        if (val % beatsMeasure === 1) {
+          metranomeSoundB1.stop();
+        } else {
+          metranomeSound.stop();
+        }
+      }
       layoutNotes.forEach(note => {
         if (note) note.stop();
       });
@@ -84,6 +105,9 @@ const Home = ({ originalLayout, error }) => {
       </Helmet>
       <p>Count: {count}</p>
       <p>Tempo: {tempo}</p>
+      <TimeSignature
+        {...{ beatDivision, beatsMeasure, setBeatDivision, setBeatsMeasure }}
+      />
       <button onClick={() => setMetronome(!metronome)}>
         {metronome ? "Turn off metronome" : "Turn on metronome"}
       </button>
@@ -100,7 +124,7 @@ const Home = ({ originalLayout, error }) => {
       <button onClick={() => onPlayButtonClick(!play)}>
         {play ? "Stop" : "Play"}
       </button>
-      <DrumPad {...{ count, layout, swapBeat }} />
+      <DrumPad {...{ count, layout, swapBeat, beatsMeasure }} />
     </>
   );
 };
