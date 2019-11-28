@@ -21,7 +21,7 @@ const SoundUploader = () => {
         errorTimeout();
         inputEl.current.value = "";
       } else {
-        // add sound to a container component that stores users custom sounds??
+        // TODO: What should we do here, add sound to a container component that stores users custom sounds?
       }
     } catch (err) {
       setFileError("Something went wrong with file upload");
