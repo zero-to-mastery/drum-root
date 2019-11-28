@@ -11,6 +11,19 @@ export const createMetronomeOscillator = audioCtx => {
   return oscillator;
 };
 
+export const createMetronomeOscillatorB1 = audioCtx => {
+  const oscillator = audioCtx.createOscillator();
+  const gainNode = audioCtx.createGain();
+
+  oscillator.connect(gainNode);
+  gainNode.connect(audioCtx.destination);
+
+  gainNode.gain.value = 0.5;
+  oscillator.frequency.value = 440;
+  oscillator.type = "triangle";
+  return oscillator;
+};
+
 export const createBassDrumOscillator = audioCtx => {
   const oscillator = audioCtx.createOscillator();
   const gain = audioCtx.createGain();

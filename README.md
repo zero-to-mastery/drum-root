@@ -28,11 +28,15 @@ A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https:/
 ## Team
 
 - Project Lead - [rgavinc](https://github.com/rgavinc)
-- Front End Lead - [Dhaval](https://github.com/Dhaval1403)
+- Front End Lead - [marcoseoane](https://github.com/marcoseoane)
 - Back End Lead - [yashShelatkar](https://github.com/yashShelatkar)
 - QA Lead - [rvvergara](https://github.com/rvvergara)
-- Database Lead - [yashShelatkar](https://github.com/yashShelatkar)
+- Database Lead - [Aneesh](https://github.com/aneesh4995)
 - Designer/ Styling Lead - [linconkusunoki](https://github.com/linconkusunoki)
+
+### Past Team Lead Members
+
+- [Dhaval](https://github.com/Dhaval1403)
 
 ---
 
@@ -55,8 +59,22 @@ If you wanted to run this site in production, you should install modules then bu
 
 You should run `npm run build` again any time you make changes to the site.
 
-## Runing Storybook
+## Running Storybook
 
 Storybook is a way to view the compoonent's in isolation. To view Drum Root's storybook run the following command:
 
     npm run storyboook
+
+## Running Test in Development Mode
+
+If you are the first time to start the tests, run the following command to ensure all related packages installed:
+
+    npm install
+
+To get started with Unit Test, run the following command:
+
+    npm run test
+
+To get started with Integration/End to End Test, run the following command:
+
+    npm run test:e2e

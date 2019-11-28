@@ -3,12 +3,12 @@ import styled from "styled-components";
 
 const Table = styled.table`
   border-collapse: collapse;
-  border-spacing: 0px;
+  border-spacing: 0;
   &,
   th,
   git td {
-    padding: 5px;
-    border: 1px solid black;
+    padding: 0.3125rem;
+    border: 0.125rem solid black;
   }
   td {
     width: 2rem;
@@ -22,19 +22,21 @@ const Table = styled.table`
   td:nth-of-type(${({ count }) => count}) {
     background-color: yellow;
   }
+  td:nth-of-type(${({ beatsMeasure }) => beatsMeasure}n) {
+    border-right: 0.125rem solid black;
+  }
 `;
 
-const DrumPad = ({ count, layout, swapBeat }) => {
+const DrumPad = ({ count, layout, swapBeat, beatsMeasure }) => {
   return (
-    <Table {...{ count }}>
+    <Table {...{ count, beatsMeasure }}>
       <tbody>
         {layout.map(({ name, icon, beats }, rowNum) => (
-          <tr key={name} onClick={() => console.log("hello")}>
+          <tr key={name} >
             {beats.map((hasBeat, beatNum) => (
               <td
                 key={beatNum}
                 onClick={() => {
-                  //console.log({ rowNum, beatNum, hasBeat });
                   swapBeat(rowNum, beatNum);
                 }}
               >

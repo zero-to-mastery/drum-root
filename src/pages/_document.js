@@ -24,6 +24,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
+        <script src="https://unpkg.com/wavesurfer.js"></script>
       </html>
     );
   }
