@@ -3,8 +3,8 @@ import Slider from "react-input-slider";
 import fetch from "isomorphic-unfetch";
 import Error from "../Components/Error";
 import DrumPad from "../Components/DrumPad";
+import SoundUploader from "../Components/SoundUploader";
 import TimeSignature from "../Components/TimeSignature/timeSignature";
-
 import { useInterval, auth } from "../utils/common-functions";
 import {
   getOscillator,
@@ -103,6 +103,7 @@ const Home = ({ originalLayout, error }) => {
       <Helmet>
         <title>Drum Root</title>
       </Helmet>
+      <SoundUploader />
       <p>Count: {count}</p>
       <p>Tempo: {tempo}</p>
       <TimeSignature
