@@ -50,3 +50,4 @@ Please follow this template:
 - Vishnu Prasad P S | https://github.com/vishnup95 | vishnup95
 - Shiva Reddy |https://github.com/shivareddy |Shiva Reddy
 - Ahamisi Godsfavour |  https://github.com/ahamisi  | aceman
+- Tisha | https://github.com/tmurvv/drum-root | tmurv
