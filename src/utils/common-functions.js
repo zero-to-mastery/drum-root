@@ -4,6 +4,8 @@ import nextCookie from "next-cookies";
 import cookie from "js-cookie";
 import isNode from "is-node";
 
+const tokenType = process.env.REACT_APP_TOKEN_TYPE;
+
 export const signin = async (email, password) =>
   fetch("http://localhost:3000/signin", {
     method: "post",
@@ -24,7 +26,7 @@ export const signout = () => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: window.sessionStorage.getItem("token")
+      Authorization: `${tokenType} ${window.sessionStorage.getItem("token")}`
     }
   }).then(() => {
     cookie.remove("token");
@@ -63,7 +65,7 @@ export const auth = ctx => {
     Router.push("/signin");
   }
 
-  return token;
+  return `${tokenType} ${token}`;
 };
 
 export const logError = function() {
