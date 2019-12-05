@@ -61,7 +61,7 @@ You should run `npm run build` again any time you make changes to the site.
 
 ## Running Storybook
 
-Storybook is a way to view the compoonent's in isolation. To view Drum Root's storybook run the following command:
+Storybook is a way to view the components in isolation. To view Drum Root's storybook, run the following command:
 
     npm run storyboook
 
