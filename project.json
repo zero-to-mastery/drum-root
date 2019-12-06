@@ -2,7 +2,7 @@
   "repoName": "drum-root",
   "tagline": "A React Web App for Creating and Sharing Drum Loops.",
   "color": "#8244BC",
-   "logo": "https://github.com/zero-to-mastery/drum-root/blob/master/src/resources/logos/logo_image.jpg",
+  "logo": "https://github.com/zero-to-mastery/drum-root/blob/master/src/resources/logos/logo_image.jpg",
   "channelName": "drum-root",
   "desc": [
     "A React Web App for Creating and Sharing Drum Loops.",
@@ -14,7 +14,7 @@
     ["Gavin#6391", "Project Lead"],
     ["dustyfrxsh#1226", "Front End Lead"],
     ["yaashShelatkar", "Back End Lead"],
-    ["needed", "QA Lead"],
+    ["Bo#3729", "QA Lead"],
     ["Aneesh#9599", "Database Lead"],
     ["Lincon Kusunoki#1682", "Designer/ Styling Lead"]
   ],
