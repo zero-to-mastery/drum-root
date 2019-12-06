@@ -1,7 +1,8 @@
 {
   "repoName": "drum-root",
   "tagline": "A React Web App for Creating and Sharing Drum Loops.",
-  "color": "#45455a",
+  "color": "#8244BC",
+   "logo": "https://github.com/zero-to-mastery/drum-root/blob/master/src/resources/logos/logo_image.jpg",
   "channelName": "drum-root",
   "desc": [
     "A React Web App for Creating and Sharing Drum Loops.",
@@ -10,12 +11,12 @@
     "__**Back End Tech:**__ \n• [Express](https://expressjs.com/) - Web Framework for Node.js\n• [PostgreSql](https://www.postgresql.org/) - Relational Database\n• [Redis](https://redis.io/) - In-Memory Data Structure Store used for Authorization"
   ],
   "team": [
-    ["rgavinc", "Project Lead"],
-    ["marcoseoane", "Front End Lead"],
-    ["yashShelatkar", "Back End Lead"],
-    ["rvvergara", "QA Lead"],
-    ["Aneesh", "Database Lead"],
-    ["linconkusunoki", "Designer/ Styling Lead"]
+    ["Gavin#6391", "Project Lead"],
+    ["dustyfrxsh#1226", "Front End Lead"],
+    ["yaashShelatkar", "Back End Lead"],
+    ["needed", "QA Lead"],
+    ["Aneesh#9599", "Database Lead"],
+    ["Lincon Kusunoki#1682", "Designer/ Styling Lead"]
   ],
   "links": [
     [
@@ -41,6 +42,6 @@
   ],
   "tasks": {
     "title": "Trello Tasks",
-    "desc": "We use Trello to manage the tasks within this project, [here](https://trello.com/drumroot) is your invitation. Further information on how to use Trello and claim a task can be found in the [CONTRIBUTING.md](https://github.com/zero-to-mastery/drum-root/blob/master/CONTRIBUTING.md) file on Github."
+    "desc": "We use Trello to manage the tasks within this project. Further information on how to use Trello and claim a task can be found in the [CONTRIBUTING.md](https://github.com/zero-to-mastery/drum-root/blob/master/CONTRIBUTING.md) file on Github."
   }
 }
