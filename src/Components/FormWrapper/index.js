@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 const FormWrapper = ({ children, onSubmit }) => {
   const [error, setError] = useState(false);
@@ -21,6 +22,11 @@ const FormWrapper = ({ children, onSubmit }) => {
       {children}
     </form>
   );
+};
+
+FormWrapper.propTypes = {
+  children: PropTypes.element,
+  onSubmit: PropTypes.func
 };
 
 export default FormWrapper;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const TimeSigStyle = styled.div`
   display: flex;
@@ -54,6 +55,11 @@ const TimeSignature = ({ setBeatDivision, setBeatsMeasure }) => {
       </TimeSigStyle>
     </>
   );
+};
+
+TimeSignature.propTypes = {
+  setBeatDivision: PropTypes.func,
+  setBeatsMeasure: PropTypes.func
 };
 
 export default TimeSignature;

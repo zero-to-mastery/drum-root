@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const Table = styled.table`
   border-collapse: collapse;
@@ -32,7 +33,7 @@ const DrumPad = ({ count, layout, swapBeat, beatsMeasure }) => {
     <Table {...{ count, beatsMeasure }}>
       <tbody>
         {layout.map(({ name, icon, beats }, rowNum) => (
-          <tr key={name} >
+          <tr key={name}>
             {beats.map((hasBeat, beatNum) => (
               <td
                 key={beatNum}
@@ -52,6 +53,19 @@ const DrumPad = ({ count, layout, swapBeat, beatsMeasure }) => {
       </tbody>
     </Table>
   );
+};
+
+DrumPad.propTypes = {
+  count: PropTypes.number.isRequired,
+  layout: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      icon: PropTypes.string.isRequired,
+      beats: PropTypes.arrayOf(PropTypes.bool)
+    })
+  ),
+  swapBeat: PropTypes.func,
+  beatsMeasure: PropTypes.number
 };
 
 export default DrumPad;
