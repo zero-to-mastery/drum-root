@@ -6,5 +6,7 @@ sudo: required
 cache:
   directories:
     - node_modules
+addons:
+  chrome: stable
 script:
   - npm run ci
