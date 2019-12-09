@@ -52,3 +52,4 @@ Please follow this template:
 - Ahamisi Godsfavour |  https://github.com/ahamisi  | aceman
 - Tisha | https://github.com/tmurvv/drum-root | tmurv
 - Sander | https://github.com/Sandermoen | Snader#9933
+- Francisco Silva | https://github.com/francisco-f-silva | Cisco123#3822
