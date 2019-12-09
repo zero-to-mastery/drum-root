@@ -35,7 +35,7 @@
     "lint": "eslint src/**/*.js",
     "lint:fix": "eslint --fix src/**/*.js",
     "test:staged": "cross-env CI=true react-scripts test --findRelatedTests",
-    "ci": "npm run lint && cross-env CI=true npm run test && npm run test:e2e"
+    "ci": "npm run lint && cross-env CI=true npm run test"
   },
   "eslintConfig": {
     "extends": "react-app"
