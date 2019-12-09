@@ -25,7 +25,10 @@ const FormWrapper = ({ children, onSubmit }) => {
 };
 
 FormWrapper.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]),
   onSubmit: PropTypes.func
 };
 
