@@ -12,6 +12,7 @@ import {
   createMetronomeOscillatorB1
 } from "../utils/sounds";
 import { Helmet } from "react-helmet";
+import PropTypes from "prop-types";
 
 const Home = ({ originalLayout, error }) => {
   const [tempo, setTempo] = useState(100);
@@ -148,6 +149,16 @@ Home.getInitialProps = async ctx => {
     error = e;
   }
   return { originalLayout, error };
+};
+
+Home.propTypes = {
+  originalLayout: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      beats: PropTypes.arrayOf(PropTypes.bool)
+    })
+  ),
+  error: PropTypes.string
 };
 
 export default Home;

@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import PropTypes from "prop-types";
 
 const Error = ({ error: { statusCode } }) => {
   const errStrings = {
@@ -114,6 +115,12 @@ const Error = ({ error: { statusCode } }) => {
       </h3>
     </>
   );
+};
+
+Error.propTypes = {
+  error: PropTypes.shape({
+    statusCode: PropTypes.number.isRequired
+  })
 };
 
 export default Error;

@@ -31,7 +31,11 @@
     "eject": "react-scripts eject",
     "test:e2e": "jest -c jest-e2e.config.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint --fix src/**/*.js",
+    "test:staged": "cross-env CI=true react-scripts test --findRelatedTests",
+    "ci": "npm run lint && cross-env CI=true npm run test && npm run test:e2e"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -57,6 +61,7 @@
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "babel-plugin-styled-components": "^1.10.6",
+    "cross-env": "^6.0.3",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-15": "^1.4.1",
     "enzyme-adapter-react-16": "^1.15.1",
@@ -73,7 +78,7 @@
     "*.js": [
       "eslint --fix",
       "prettier --write",
-      "jest --bail --findRelatedTests",
+      "npm run test:staged",
       "git add"
     ],
     "*.{json,md}": [

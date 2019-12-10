@@ -3,6 +3,7 @@ import { signin } from "../utils/common-functions";
 import FormWrapper from "../Components/FormWrapper";
 import { useRouter } from "next/router";
 import { Helmet } from "react-helmet";
+import PropTypes from "prop-types";
 
 const Signin = ({ onRouteChange, loadUser }) => {
   const router = useRouter();
@@ -51,6 +52,11 @@ const Signin = ({ onRouteChange, loadUser }) => {
       </div>
     </>
   );
+};
+
+Signin.propTypes = {
+  onRouteChange: PropTypes.func,
+  loadUser: PropTypes.func
 };
 
 export default Signin;

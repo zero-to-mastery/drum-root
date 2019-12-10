@@ -2,6 +2,7 @@
 import { logError } from "../../utils/common-functions";
 import React, { Component } from "react";
 import Error from "../Error";
+import PropTypes from "prop-types";
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -24,5 +25,12 @@ class ErrorBoundary extends Component {
     return error ? <Error {...{ error }} /> : children;
   }
 }
+
+ErrorBoundary.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]).isRequired
+};
 
 export default ErrorBoundary;

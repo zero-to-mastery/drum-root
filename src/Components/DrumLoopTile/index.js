@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const TitleContainer = styled.div`
   border: 0.063rem solid black;
@@ -19,5 +20,10 @@ const LoopTile = ({ title, href }) => (
     <TitleLink href={href}> {title} </TitleLink>
   </TitleContainer>
 );
+
+LoopTile.propTypes = {
+  title: PropTypes.string,
+  href: PropTypes.string
+};
 
 export default LoopTile;
