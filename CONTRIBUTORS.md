@@ -54,3 +54,4 @@ Please follow this template:
 - Sander | https://github.com/Sandermoen | Snader#9933
 - Francisco Silva | https://github.com/francisco-f-silva | Cisco123#3822
 - Kenneth | https://github.com/kencode7 | kencode#2025
+- Emmanuel | https://github.com/SkyC0der | Emmanuell#9392
