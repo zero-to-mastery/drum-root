@@ -35,11 +35,37 @@ const Home = ({ originalLayout, error }) => {
     return clearInterval(useInterval);
   }, []);
 
+  useEffect(() => {
+    if (layout[0].beats.length === beatsMeasure) return;
+    const newLayout = [...layout];
+    validateBeats(newLayout);
+  }, [beatsMeasure]);
+
   const onPlayButtonClick = active => {
     if (!active) {
       setCount(1);
     }
     setPlay(active);
+  };
+
+  const validateBeats = layout => {
+    let beatLength = layout[0].beats.length;
+    while (!Number.isInteger(beatLength / beatsMeasure)) {
+      layout.forEach(row => {
+        beatLength < beatsMeasure ? row.beats.push(false) : row.beats.pop();
+      });
+      beatLength = layout[0].beats.length;
+    }
+    return setLayout(layout);
+  };
+
+  const updateBeats = (layout, remove) => {
+    layout.forEach(row => {
+      for (let i = beatsMeasure; i > 0; i--) {
+        remove ? row.beats.pop() : row.beats.push(false);
+      }
+    });
+    return setLayout(layout);
   };
 
   const swapBeat = (rowNum, beatNum) => {
@@ -50,19 +76,13 @@ const Home = ({ originalLayout, error }) => {
 
   const addNewBeat = () => {
     const newLayout = [...layout];
-    if (newLayout[0].beats.length === 16) return;
-    newLayout.forEach(row => {
-      row.beats.push(false);
-    });
-    setLayout(newLayout);
+    if (newLayout[0].beats.length === 12) return;
+    updateBeats(newLayout);
   };
   const rmvBeat = () => {
     const newLayout = [...layout];
-    if (newLayout[0].beats.length === 4) return;
-    newLayout.forEach(row => {
-      row.beats.pop();
-    });
-    setLayout(newLayout);
+    if (newLayout[0].beats.length === beatsMeasure) return;
+    updateBeats(newLayout, true);
   };
 
   const playNote = () => {
