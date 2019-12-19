@@ -12,4 +12,4 @@ export const mockLayout1 = [
   { name: "snare", icon: "🥁", beats: [false, false, true, false] }
 ];
 
-console.log("mocklayout in file", mockLayout1);
+// console.log("mocklayout in file", mockLayout1);
