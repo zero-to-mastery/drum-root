@@ -57,3 +57,4 @@ Please follow this template:
 - Emmanuel | https://github.com/SkyC0der | Emmanuell#9392
 - Chris |https://github.com/christocarr | ChrisC#3242
 - Justin | https://github.com/CatsOnFilm | JustinBB#1681
+- Allison | https://github.com/allisonnnnnn | Allison#1565
