@@ -1,5 +1,7 @@
 # Drum Root
 
+[![Build Status](https://travis-ci.com/zero-to-mastery/drum-root.svg?branch=master)](https://travis-ci.com/zero-to-mastery/drum-root)
+
 A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https://github.com/rgavinc/drum-root-api) for Back End Service.
 
 ## Features
@@ -16,7 +18,8 @@ A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https:/
 - [Next.js](https://nextjs.org/) - Server Side Rendering
 - [Styled Components](https://www.styled-components.com/) - Styling
 - [Jest](https://jestjs.io/) - JavaScript Testing Framework
-- [Puppeteer](https://developers.google.com/web/tools/puppeteer) - A Node Library for Controlling Headless Chrome or Chromium. Used for end to end Testing(Coming Soon)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) - A library to test React UI components
+- [Puppeteer](https://developers.google.com/web/tools/puppeteer) - A Node Library for Controlling Headless Chrome or Chromium. Used for end to end Testing
 - [Storybook](https://storybook.js.org/) - Tool for Developing UI Components in Isolation
 
 ### Back End

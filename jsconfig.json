@@ -5,5 +5,6 @@
       "Components/*": ["./src/Components/*"],
       "utils/*": ["./src/utils"]
     }
-  }
+  },
+  "typeAcquisition": { "include": ["jest"] }
 }

@@ -1,10 +1,11 @@
 import React from "react";
-import { mount } from "enzyme";
+import { render } from "@testing-library/react";
 import Input from "./index";
 
 describe("Input component", () => {
   test("should render properly", () => {
-    const wrapper = mount(<Input />);
-    expect(wrapper.exists()).toBe(true);
+    const { container } = render(<Input type="submit" />);
+
+    expect(container.firstChild).toHaveAttribute("type", "submit");
   });
 });
