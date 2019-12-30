@@ -58,4 +58,5 @@ Please follow this template:
 - Chris |https://github.com/christocarr | ChrisC#3242
 - Justin | https://github.com/CatsOnFilm | JustinBB#1681
 - Allison | https://github.com/allisonnnnnn | Allison#1565
-- Timo Köhler / bukto | https://github.com/koehlertimo | bukto_#6269
+- Timo Köhler / bukto | https://github.com/koehlertimo | bukto\_#6269
+- Neaj | https://github.com/rovinox | rovinox#5244
