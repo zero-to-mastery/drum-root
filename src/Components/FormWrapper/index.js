@@ -6,7 +6,6 @@ const FormWrapper = ({ children, onSubmit }) => {
   const [success, setSuccess] = useState(false);
   const handleSubmit = async e => {
     try {
-      console.log("trying");
       e.preventDefault();
       await onSubmit();
       setSuccess(true);
