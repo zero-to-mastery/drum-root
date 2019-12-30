@@ -43,5 +43,6 @@
   "tasks": {
     "title": "Trello Tasks",
     "desc": "We use Trello to manage the tasks within this project. Further information on how to use Trello and claim a task can be found in the [CONTRIBUTING.md](https://github.com/zero-to-mastery/drum-root/blob/master/CONTRIBUTING.md) file on Github."
-  }
+  },
+  "welcomeMsg":"Please take a moment to read through the pinned messages. Here you will find important notes and how to get stated with the project!"
 }
