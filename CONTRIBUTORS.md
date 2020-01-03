@@ -61,3 +61,7 @@ Please follow this template:
 - Timo Köhler / bukto | https://github.com/koehlertimo | bukto\_#6269
 - Neaj | https://github.com/rovinox | rovinox#5244
 - Aditya | https://github.com/adimohankv | adi#4829
+  <<<<<<< HEAD
+  =======
+- Adrian | https://github.com/adrianmonteil1983 | frenchie#0857
+  > > > > > > > f801157e7e8cfdf4c5254e897ad30eb9f03da090
