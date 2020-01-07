@@ -63,3 +63,4 @@ Please follow this template:
 - Aditya | https://github.com/adimohankv | adi#4829
 - Adrian | https://github.com/adrianmonteil1983 | frenchie#0857
 - Odira  | https://github.com/odira1 | Odira#6234
+- Arseniy | https://github.com/ArseniyX | Arseniy#4912
