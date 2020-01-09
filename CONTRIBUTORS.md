@@ -62,6 +62,11 @@ Please follow this template:
 - Neaj | https://github.com/rovinox | rovinox#5244
 - Aditya | https://github.com/adimohankv | adi#4829
   <<<<<<< HEAD
+  <<<<<<< HEAD
   =======
 - Adrian | https://github.com/adrianmonteil1983 | frenchie#0857
-  > > > > > > > f801157e7e8cfdf4c5254e897ad30eb9f03da090
+  > > > > > > > # f801157e7e8cfdf4c5254e897ad30eb9f03da090
+- Adrian | https://github.com/adrianmonteil1983 | frenchie#0857
+- Odira | https://github.com/odira1 | Odira#6234
+- Arseniy | https://github.com/ArseniyX | Arseniy#4912
+  > > > > > > > 83adbd4f133b7ea63055afcf1d0fe9c4f343faf3
