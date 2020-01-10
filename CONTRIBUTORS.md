@@ -62,5 +62,6 @@ Please follow this template:
 - Neaj | https://github.com/rovinox | rovinox#5244
 - Aditya | https://github.com/adimohankv | adi#4829
 - Adrian | https://github.com/adrianmonteil1983 | frenchie#0857
-- Odira  | https://github.com/odira1 | Odira#6234
+- Odira | https://github.com/odira1 | Odira#6234
 - Arseniy | https://github.com/ArseniyX | Arseniy#4912
+- Klaven | https://github.com/klavenjones | klavenjones#2869
