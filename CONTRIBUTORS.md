@@ -66,3 +66,4 @@ Please follow this template:
 - Arseniy | https://github.com/ArseniyX | Arseniy#4912
 - Klaven | https://github.com/klavenjones | klavenjones#2869
 - Nacho | https://github.com/ignaciocieza | nacholf
+- Aryansh Mahato | https://github.com/AryanshMahato | Aryansh#4325
