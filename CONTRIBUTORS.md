@@ -69,3 +69,4 @@ Please follow this template:
 - Aryansh Mahato | https://github.com/AryanshMahato | Aryansh#4325
 - Edwin Boon | https://github.com/edwinboon| Edwin#0147
 - Agnieszka Wozniak | https://github.com/woziu17 | WOZIU#4233
+- Mobasergio | https://github.com/mobasergio | Nytz#7425
