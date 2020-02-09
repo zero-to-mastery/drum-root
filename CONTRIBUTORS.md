@@ -70,3 +70,4 @@ Please follow this template:
 - Edwin Boon | https://github.com/edwinboon| Edwin#0147
 - Agnieszka Wozniak | https://github.com/woziu17 | WOZIU#4233
 - Mobasergio | https://github.com/mobasergio | Nytz#7425
+- Domantas Bazys | https://github.com/DomantasBazys | Domantuxazz#4934
