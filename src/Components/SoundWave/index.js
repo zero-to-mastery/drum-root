@@ -1,10 +1,10 @@
-import React, { useRef, useEffect, useState } from "react";
-import PropTypes from "prop-types";
+import React, { useRef, useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 const SoundWave = ({
   audioFile,
-  waveColor = "#333333",
-  progressColor = "#DE6A08"
+  waveColor = '#333333',
+  progressColor = '#DE6A08'
 }) => {
   const waveFormRef = useRef(null);
   const waveSurferRef = useRef(null);
@@ -28,7 +28,7 @@ const SoundWave = ({
 
   return (
     <>
-      <button onClick={handlePlayAndPause}>{isPlay ? "Pause" : "Play"}</button>
+      <button onClick={handlePlayAndPause}>{isPlay ? 'Pause' : 'Play'}</button>
       <div ref={waveFormRef} />
     </>
   );

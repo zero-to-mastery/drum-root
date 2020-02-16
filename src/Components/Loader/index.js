@@ -1,5 +1,5 @@
-import React from "react";
-import styled, { keyframes } from "styled-components";
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
 
 const rotateWrapp = keyframes`
   100% {
@@ -38,7 +38,7 @@ const SkChaseDot = styled.div`
   animation-delay: ${props => props.animationDelay};
 
   &:before {
-    content: "";
+    content: '';
     display: block;
     width: 25%;
     height: 25%;

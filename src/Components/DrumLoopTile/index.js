@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const TitleContainer = styled.div`
   border: 0.063rem solid black;
@@ -17,7 +17,7 @@ const TitleLink = styled.a`
 
 const LoopTile = ({ title, href }) => (
   <TitleContainer className="title-container">
-    <TitleLink href={href}> {title} </TitleLink>
+    <TitleLink href={href}>{title}</TitleLink>
   </TitleContainer>
 );
 

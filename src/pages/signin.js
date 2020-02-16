@@ -1,18 +1,19 @@
-import React, { useState } from "react";
-import { signin } from "../utils/common-functions";
-import FormWrapper from "../Components/FormWrapper";
-import { useRouter } from "next/router";
-import { Helmet } from "react-helmet";
-import PropTypes from "prop-types";
+import React, { useState } from 'react';
+import { useRouter } from 'next/router';
+import { Helmet } from 'react-helmet';
+import PropTypes from 'prop-types';
+import FormWrapper from '../Components/FormWrapper';
+import { signin } from '../utils/common-functions';
 
+// eslint-disable-next-line no-unused-vars
 const Signin = ({ onRouteChange, loadUser }) => {
   const router = useRouter();
-  const [signinEmail, setSigninEmail] = useState("");
-  const [signinPassword, setSigninPassword] = useState("");
+  const [signinEmail, setSigninEmail] = useState('');
+  const [signinPassword, setSigninPassword] = useState('');
 
-  const onSubmitSignIn = async e => {
+  const onSubmitSignIn = async () => {
     await signin(signinEmail, signinPassword);
-    router.push("/");
+    router.push('/');
   };
 
   return (
