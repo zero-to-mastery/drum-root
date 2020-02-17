@@ -1,5 +1,5 @@
-import React, { useRef, useState } from "react";
-import styled from "styled-components";
+import React, { useRef, useState } from 'react';
+import styled from 'styled-components';
 
 const FileInput = styled.input``;
 const FileErrorSpan = styled.span`
@@ -17,14 +17,14 @@ const SoundUploader = () => {
     try {
       const file = event.target.files[0];
       if (file.size > 1000000) {
-        setFileError("File size must not exceed 1MB");
+        setFileError('File size must not exceed 1MB');
         errorTimeout();
-        inputEl.current.value = "";
+        inputEl.current.value = '';
       } else {
         // TODO: What should we do here, add sound to a container component that stores users custom sounds?
       }
     } catch (err) {
-      setFileError("Something went wrong with file upload");
+      setFileError('Something went wrong with file upload');
       errorTimeout();
     }
   };
