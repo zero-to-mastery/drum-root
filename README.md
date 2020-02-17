@@ -35,7 +35,7 @@ A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https:/
 - Back End Lead - [yashShelatkar](https://github.com/yashShelatkar)
 - QA Lead - [zbc](https://github.com/zbc)
 - Database Lead - [Aneesh](https://github.com/aneesh4995)
-- Designer/ Styling Lead - needed
+- Designer/ Styling Lead - [LukasHirt](https://github.com/LukasHirt)
 
 ### Past Team Lead Members
 
