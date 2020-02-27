@@ -72,3 +72,4 @@ Please follow this template:
 - Mobasergio | https://github.com/mobasergio | Nytz#7425
 - Domantas Bazys | https://github.com/DomantasBazys | Domantuxazz#4934
 - Lukas Hirt | https://github.com/LukasHirt | Lukas Hirt#1524
+- Brandon Tripp | https://github.com/Brandon-G-Tripp | BGTripp3 #0636
