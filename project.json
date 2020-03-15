@@ -11,12 +11,12 @@
     "__**Back End Tech:**__ \n• [Express](https://expressjs.com/) - Web Framework for Node.js\n• [PostgreSql](https://www.postgresql.org/) - Relational Database\n• [Redis](https://redis.io/) - In-Memory Data Structure Store used for Authorization"
   ],
   "team": [
-    ["Gavin#6391", "Project Lead"],
-    ["dustyfrxsh#1226", "Front End Lead"],
+    ["Josh", "Project Lead"],
+    ["needed", "Front End Lead"],
     ["yaashShelatkar", "Back End Lead"],
-    ["Bo#3729", "QA Lead"],
-    ["Aneesh#9599", "Database Lead"],
-    ["Lincon Kusunoki#1682", "Designer/ Styling Lead"]
+    ["Bo", "QA Lead"],
+    ["Aneesh", "Database Lead"],
+    ["needed", "Designer/ Styling Lead"]
   ],
   "links": [
     [

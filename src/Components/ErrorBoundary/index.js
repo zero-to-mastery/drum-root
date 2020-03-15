@@ -1,8 +1,8 @@
 // See https://reactjs.org/docs/error-boundaries.html
-import { logError } from "../../utils/common-functions";
-import React, { Component } from "react";
-import Error from "../Error";
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { logError } from '../../utils/common-functions';
+import Error from '../Error';
 
 class ErrorBoundary extends Component {
   constructor(props) {

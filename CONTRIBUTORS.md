@@ -58,4 +58,19 @@ Please follow this template:
 - Chris |https://github.com/christocarr | ChrisC#3242
 - Justin | https://github.com/CatsOnFilm | JustinBB#1681
 - Allison | https://github.com/allisonnnnnn | Allison#1565
-- Timo Köhler / bukto | https://github.com/koehlertimo | bukto_#6269
+- Timo Köhler / bukto | https://github.com/koehlertimo | bukto\_#6269
+- Neaj | https://github.com/rovinox | rovinox#5244
+- Aditya | https://github.com/adimohankv | adi#4829
+- Adrian | https://github.com/adrianmonteil1983 | frenchie#0857
+- Odira | https://github.com/odira1 | Odira#6234
+- Arseniy | https://github.com/ArseniyX | Arseniy#4912
+- Klaven | https://github.com/klavenjones | klavenjones#2869
+- Nacho | https://github.com/ignaciocieza | nacholf
+- Aryansh Mahato | https://github.com/AryanshMahato | Aryansh#4325
+- Edwin Boon | https://github.com/edwinboon| Edwin#0147
+- Agnieszka Wozniak | https://github.com/woziu17 | WOZIU#4233
+- Mobasergio | https://github.com/mobasergio | Nytz#7425
+- Domantas Bazys | https://github.com/DomantasBazys | Domantuxazz#4934
+- Lukas Hirt | https://github.com/LukasHirt | Lukas Hirt#1524
+- Brandon Tripp | https://github.com/Brandon-G-Tripp | BGTripp3 #0636
+- Yassine | https://github.com/Yassineab27 | Yass#0186

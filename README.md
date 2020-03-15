@@ -1,5 +1,7 @@
 # Drum Root
 
+[![Build Status](https://travis-ci.com/zero-to-mastery/drum-root.svg?branch=master)](https://travis-ci.com/zero-to-mastery/drum-root)
+
 A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https://github.com/rgavinc/drum-root-api) for Back End Service.
 
 ## Features
@@ -16,7 +18,8 @@ A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https:/
 - [Next.js](https://nextjs.org/) - Server Side Rendering
 - [Styled Components](https://www.styled-components.com/) - Styling
 - [Jest](https://jestjs.io/) - JavaScript Testing Framework
-- [Puppeteer](https://developers.google.com/web/tools/puppeteer) - A Node Library for Controlling Headless Chrome or Chromium. Used for end to end Testing(Coming Soon)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) - A library to test React UI components
+- [Puppeteer](https://developers.google.com/web/tools/puppeteer) - A Node Library for Controlling Headless Chrome or Chromium. Used for end to end Testing
 - [Storybook](https://storybook.js.org/) - Tool for Developing UI Components in Isolation
 
 ### Back End
@@ -27,17 +30,20 @@ A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https:/
 
 ## Team
 
-- Project Lead - [rgavinc](https://github.com/rgavinc)
-- Front End Lead - [marcoseoane](https://github.com/marcoseoane)
+- Project Lead - [joshtru](https://github.com/joshtru)
+- Front End Lead - needed
 - Back End Lead - [yashShelatkar](https://github.com/yashShelatkar)
 - QA Lead - [zbc](https://github.com/zbc)
 - Database Lead - [Aneesh](https://github.com/aneesh4995)
-- Designer/ Styling Lead - [linconkusunoki](https://github.com/linconkusunoki)
+- Designer/ Styling Lead - [LukasHirt](https://github.com/LukasHirt)
 
 ### Past Team Lead Members
 
+- [rgavinc](https://github.com/rgavinc) - Project Lead _Oct 2019 - Jan 2020_
 - [Dhaval](https://github.com/Dhaval1403) - Front End Lead _Oct 2019 - Nov 2019_
 - [rvvergara](https://github.com/rvvergara) - QA Lead _Oct 2019 - Dec 2019_
+- [marcoseoane](https://github.com/marcoseoane) - Front End Lead _Nov 2019 - Dec 2019_
+- [linconkusunoki](https://github.com/linconkusunoki) - Designer/ Styling Lead _Oct 2019 - Jan 2020_
 
 ---
 

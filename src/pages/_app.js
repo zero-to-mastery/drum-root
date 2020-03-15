@@ -1,9 +1,9 @@
-import React from "react";
-import App from "next/app";
-import styled, { createGlobalStyle } from "styled-components";
-import Link from "next/link";
-import { signout } from "../utils/common-functions";
-import ErrorBoundary from "../Components/ErrorBoundary";
+import React from 'react';
+import App from 'next/app';
+import styled, { createGlobalStyle } from 'styled-components';
+import Link from 'next/link';
+import { signout } from '../utils/common-functions';
+import ErrorBoundary from '../Components/ErrorBoundary';
 
 const BodyStyling = createGlobalStyle`
   body {

@@ -1,15 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import LoopTile from "./index";
+import React from 'react';
+import { render } from '@testing-library/react';
+import LoopTile from './index';
 
-import Enzyme, { shallow, render, mount } from "enzyme";
-import toJson from "enzyme-to-json";
-import Adapter from "enzyme-adapter-react-16";
-
-Enzyme.configure({ adapter: new Adapter() });
-
-test("renders correctly enzyme", () => {
-  const wrapper = mount(<LoopTile />);
-
-  expect(wrapper.exists()).toBe(true);
+test('renders DrumLoopTile with title and link correctly', () => {
+  const props = { title: 'Test Title', href: 'Test href' };
+  const { getByText } = render(<LoopTile {...props} />);
+  const title = getByText(/test title/i);
+  expect(title).toHaveTextContent(props.title);
+  expect(title).toHaveAttribute('href', props.href);
 });

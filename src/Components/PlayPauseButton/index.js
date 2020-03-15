@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import { PlayCircle } from "styled-icons/boxicons-regular/PlayCircle";
-import { PauseCircle } from "styled-icons/boxicons-regular/PauseCircle";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { PlayCircle } from 'styled-icons/boxicons-regular/PlayCircle';
+import { PauseCircle } from 'styled-icons/boxicons-regular/PauseCircle';
 
 const Button = styled.button`
-  color: ${props => (props.color ? props.color : "#000")};
+  color: ${props => (props.color ? props.color : '#000')};
   background-color: Transparent;
   border-radius: 50%;
   border: none;
