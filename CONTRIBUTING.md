@@ -1,5 +1,14 @@
 # Contributing to Drum Root
 
+**[Back to Drum Root](./README.md)**
+
+## Table of content
+
+- [First steps](#First-steps)
+- [Trello Columns](#Trello-Columns)
+- [Additional Questions](#Additional-Questions)
+- [Extra Notes](#Extra-Notes)
+
 ## First steps
 
 - Fork [drum-root](https://github.com/zero-to-mastery/drum-root) (and [drum-root-api](https://github.com/zero-to-mastery/drum-root-api))
@@ -46,3 +55,5 @@ If you have questions about how to contribute, contact a project admin through D
 **We recognize all contributors**
 Contributions can be:
 Answering questions, bug reports, code, documentation, content, design, PR reviews, ideas & planning, translation, tests, tutorials, etc.
+
+**[Back to Drum Root](./README.md)**
