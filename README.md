@@ -1,8 +1,17 @@
-# Drum Root
+<p align="center">
+<a href="https://github.com/zero-to-mastery/drum-root">
+<img src="./docs/images/drum-root.svg" width="60%" alt="drum-root" />
+</a>
+</p>
 
 [![Build Status](https://travis-ci.com/zero-to-mastery/drum-root.svg?branch=master)](https://travis-ci.com/zero-to-mastery/drum-root)
+![GitHub](https://img.shields.io/github/license/joshtru/drum-root)
+![GitHub top language](https://img.shields.io/github/languages/top/zero-to-mastery/drum-root?color=gree&style=flat-square)
+![GitHub forks](https://img.shields.io/github/forks/zero-to-mastery/drum-root)
+![GitHub contributors](https://img.shields.io/github/contributors/zero-to-mastery/drum-root?color=blue)
+![GitHub last commit](https://img.shields.io/github/last-commit/zero-to-mastery/drum-root)
 
-A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https://github.com/rgavinc/drum-root-api) for Back End Service.
+Drum root is a React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https://github.com/rgavinc/drum-root-api) for Back End Service.
 
 ## Features
 
@@ -10,7 +19,128 @@ A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https:/
 - Record Custom Sounds
 - Save and Share Drum Loops With Others
 
-## Tech
+---
+
+## Table of content
+
+- [Installation](#Installation)
+- [Running](#Running)
+  - [Locally in Development Mode](#Locally-in-Development-Mode)
+  - [Storybook](#Storybook)
+- [Testing](#Testing)
+  - [in Development Mode](#in-Development-Mode)
+- [Building and Deploying](#Building-and-Deploying)
+  - [For Production](#For-Production)
+- [Contributing](#Contributing)
+  - [What To Know Before Contributing](#What-To-Know-Before-Contributing)
+  - [Adding Name To Contributors List](#Adding-Name-To-Contributors-List)
+- [Style Guide](#Style-Guide)
+- [Technologies](#Technologies)
+  - [Front End](#Front-End)
+  - [Back End](#Back-End)
+- [Team Leaders](#Team-Leaders)
+  - [Current Team Lead Members](#Past-Team-Lead-Members)
+  - [Past Team Lead Members](#Past-Team-Lead-Members)
+- [License](#License)
+
+---
+
+## Installation
+
+To get it working, you need to install all the dependencies. And the best way to do this is through the [Command Line Interface (CLI)](https://en.wikipedia.org/wiki/Command-line_interface).
+
+To get started, make sure you have either of the package manager, [NPM](https://docs.npmjs.com/about-npm/) or [Yarn](https://yarnpkg.com/getting-started) installed and working on your machine.
+
+> To install the packages through npm, run the command
+
+    npm install
+
+> To install the packages through yarn, run the command
+
+    yarn add
+
+**_NOTE_**: In the rest of the documentation, you will come across npm being used for running commands. To use **_yarn_** in place of **_npm_** for the commands, simply substitute npm for yarn. Example, `npm start` as `yarn start`. For more help, checkout [migrating from npm](https://classic.yarnpkg.com/en/docs/migrating-from-npm/)
+
+---
+
+**[⬆ Back to Top](#Table-of-content)**
+
+## Running
+
+### Locally in Development Mode
+
+The backend code should be running in order for the front end to behave correctly. See [Drum Root API](https://github.com/rgavinc/drum-root-api).
+
+To get started with the front end, fork the repository and run the following command on your local machine:
+
+    npm run dev
+
+### Storybook
+
+Storybook is a way to view the components in isolation. To view Drum Root's storybook, run the following command:
+
+    npm run storyboook
+
+---
+
+## Testing
+
+### in Development Mode
+
+If you are the first time to start the tests, ensure your packages are installed. If not, [install packages](#Installation).
+
+To get started with Unit Test, run the following command:
+
+    npm run test
+
+To get started with Integration/End to End Test, run the following command:
+
+    npm run test:e2e
+
+---
+
+**[⬆ Back to Top](#Table-of-content)**
+
+## Building and Deploying
+
+### For Production
+
+If you wanted to run this site in production, you should have installed packages. If not, [install packages](#Installation), then build the site with `npm run build` and run it with `npm start`:
+
+    npm run build
+    npm start
+
+You should run `npm run build` again any time you make changes to the site.
+
+---
+
+**[⬆ Back to Top](#Table-of-content)**
+
+## Contributing
+
+Drum Root happily accepts contributions.
+
+## What To Know Before Contributing
+
+To begin contribution, there are some things you need to know, like what to do first, where to find tasks, any additional questions, and notes provided for contributors. You can begin at [**_Contributing to Drum Root_**](./CONTRIBUTING.md#Contributing-to-Drum-Root)
+
+## Adding Name To Contributors List
+
+We recommend every contributor to add their name to the contributors list. A detailed intructions on how to get this done be found at [**_DRUM ROOT CONTRIBUTORS_**](./CONTRIBUTORS.md#Drum-Root-Contributors)
+
+---
+
+**[⬆ Back to Top](#Table-of-content)**
+
+## Style Guide
+
+The style guide is a set of standard outlined on how code should be written. We currently follow the [AirBnB style guide](https://github.com/airbnb/javascript), but you can checkout [Drum Root style guide](https://github.com/zero-to-mastery/drum-root/wiki/Drum-Root-Style-Guide) for any additional information.
+
+---
+
+**[⬆ Back to Top](#Table-of-content)**
+
+## Technologies
 
 ### Front End
 
@@ -28,7 +158,13 @@ A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https:/
 - [PostgreSql](https://www.postgresql.org/) - Relational Database(Coming Soon)
 - [Redis](https://redis.io/) - In-Memory Data Structure Store used for Authorization(Coming Soon)
 
-## Team
+---
+
+**[⬆ Back to Top](#Table-of-content)**
+
+## Team Leaders
+
+### Current Team Lead Members
 
 - Project Lead - [joshtru](https://github.com/joshtru)
 - Front End Lead - needed
@@ -47,41 +183,10 @@ A React Web App for Creating and Sharing Drum Loops. See [Drum Root API](https:/
 
 ---
 
-## Running Locally in Development Mode
+**[⬆ Back to Top](#Table-of-content)**
 
-The backend code should be running in order for the front end to behave correctly. See [Drum Root API](https://github.com/rgavinc/drum-root-api).
+## License
 
-To get started with the front end, fork the repository and run the following commands:
+This project is licensed under the MIT License - see the [License](./LICENSE) file for details
 
-    npm install
-    npm run dev
-
-## Building and Deploying in Production
-
-If you wanted to run this site in production, you should install modules then build the site with `npm run build` and run it with `npm start`:
-
-    npm install
-    npm run build
-    npm start
-
-You should run `npm run build` again any time you make changes to the site.
-
-## Running Storybook
-
-Storybook is a way to view the components in isolation. To view Drum Root's storybook, run the following command:
-
-    npm run storyboook
-
-## Running Test in Development Mode
-
-If you are the first time to start the tests, run the following command to ensure all related packages installed:
-
-    npm install
-
-To get started with Unit Test, run the following command:
-
-    npm run test
-
-To get started with Integration/End to End Test, run the following command:
-
-    npm run test:e2e
+**[⬆ Back to Top](#Table-of-content)**
