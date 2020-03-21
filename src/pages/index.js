@@ -171,7 +171,7 @@ Home.getInitialProps = async ctx => {
   let originalLayout = [];
   let error;
   try {
-    const response = await fetch('http://localhost:3000/drumlayout', {
+    const response = await fetch(process.env.REACT_APP_DRUM_LAYOUT, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

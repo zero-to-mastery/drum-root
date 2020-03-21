@@ -7,7 +7,7 @@ import isNode from 'is-node';
 const tokenType = process.env.REACT_APP_TOKEN_TYPE;
 
 export const signin = async (email, password) =>
-  fetch('http://localhost:3000/signin', {
+  fetch(process.env.REACT_APP_SIGNIN_URL, {
     method: 'post',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, password })
@@ -21,8 +21,7 @@ export const signin = async (email, password) =>
     .catch(console.log);
 
 export const signout = () => {
-  // TODO: figure out how to set env vars
-  fetch('http://localhost:3000/signout', {
+  fetch(process.env.REACT_APP_SIGNIN_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
