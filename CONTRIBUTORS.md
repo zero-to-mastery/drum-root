@@ -79,7 +79,7 @@ Please follow this template:
 - Brandon Tripp | https://github.com/Brandon-G-Tripp | BGTripp3 #0636
 - Yassine | https://github.com/Yassineab27 | Yass#0186
 - Anurag Yadav | https://github.com/yadavanurag | yadavanurag#0362
-- Daewon Kim | https://github.com/xoxwgys56 | xoxwgys56
+- Dae-won Kim | https://github.com/xoxwgys56 | xoxwgys56
 
 ---
 
