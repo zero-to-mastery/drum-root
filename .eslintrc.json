@@ -1,25 +1,45 @@
 {
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier", "react"],
   "env": {
     "browser": true,
     "es6": true,
     "jest": true,
     "node": true
   },
-  "extends": ["plugin:react/recommended"],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 2018,
-    "sourceType": "module"
-  },
-  "plugins": ["react"],
   "rules": {
-    "quotes": ["error", "double"],
-    "semi": ["error", "always"]
+    "no-console": "off",
+    "no-plusplus": "off",
+    "no-shadow": "off",
+    "no-use-before-define": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-array-index-key": "off",
+    "react/require-default-props": "off",
+    "react/button-has-type": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off"
   }
 }

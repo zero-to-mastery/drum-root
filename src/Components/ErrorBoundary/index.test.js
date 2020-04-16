@@ -1,13 +1,13 @@
-import React from "react";
-import { render } from "@testing-library/react";
-import ErrorBoundary from "./index";
-import { logError as mockLogError } from "../../utils/common-functions";
+import React from 'react';
+import { render } from '@testing-library/react';
+import ErrorBoundary from './index';
+import { logError as mockLogError } from '../../utils/common-functions';
 
-jest.mock("../../utils/common-functions");
+jest.mock('../../utils/common-functions');
 
 beforeAll(() => {
-  jest.spyOn(console, "error").mockImplementation(() => {});
-  jest.spyOn(console, "warn").mockImplementation(() => {});
+  jest.spyOn(console, 'error').mockImplementation(() => {});
+  jest.spyOn(console, 'warn').mockImplementation(() => {});
 });
 
 afterAll(() => {
@@ -21,14 +21,15 @@ afterEach(() => {
 
 const Bomb = ({ shouldThrow }) => {
   if (shouldThrow) {
+    // eslint-disable-next-line no-throw-literal
     throw { statusCode: 404 };
   } else {
     return null;
   }
 };
 
-describe("ErrorBoundary component", () => {
-  test("should render correctly when there is an error", () => {
+describe('ErrorBoundary component', () => {
+  test('should render correctly when there is an error', () => {
     mockLogError.mockResolvedValueOnce();
     const { rerender, getByText, queryByText } = render(
       <ErrorBoundary>
@@ -39,26 +40,26 @@ describe("ErrorBoundary component", () => {
     expect(mockLogError).not.toHaveBeenCalled();
     expect(console.error).not.toHaveBeenCalled();
     expect(
-      queryByText(/not found/i, { selector: "h2" })
+      queryByText(/not found/i, { selector: 'h2' })
     ).not.toBeInTheDocument();
     expect(
-      queryByText(/Requested file was not found/i, { selector: "h3" })
+      queryByText(/Requested file was not found/i, { selector: 'h3' })
     ).not.toBeInTheDocument();
 
     rerender(
       <ErrorBoundary>
-        <Bomb shouldThrow={true} />
+        <Bomb shouldThrow />
       </ErrorBoundary>
     );
     const error = { statusCode: expect.any(Number) };
-    const info = { componentStack: expect.stringContaining("Bomb") };
+    const info = { componentStack: expect.stringContaining('Bomb') };
     expect(mockLogError).toHaveBeenCalledWith(error, info);
     expect(mockLogError).toHaveBeenCalledTimes(1);
     expect(console.error).toHaveBeenCalledTimes(2);
 
-    expect(getByText(/not found/i, { selector: "h2" })).toBeInTheDocument();
+    expect(getByText(/not found/i, { selector: 'h2' })).toBeInTheDocument();
     expect(
-      getByText(/Requested file was not found/i, { selector: "h3" })
+      getByText(/Requested file was not found/i, { selector: 'h3' })
     ).toBeInTheDocument();
   });
 });

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 const FormWrapper = ({ children, onSubmit }) => {
   const [error, setError] = useState(false);
@@ -9,8 +9,8 @@ const FormWrapper = ({ children, onSubmit }) => {
       e.preventDefault();
       await onSubmit();
       setSuccess(true);
-    } catch (e) {
-      setError(e && e.message);
+    } catch (err) {
+      setError(err && err.message);
     }
   };
 

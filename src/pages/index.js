@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from "react";
-import Slider from "react-input-slider";
-import fetch from "isomorphic-unfetch";
-import Error from "../Components/Error";
-import DrumPad from "../Components/DrumPad";
-import SoundUploader from "../Components/SoundUploader";
-import TimeSignature from "../Components/TimeSignature/timeSignature";
-import { useInterval, auth } from "../utils/common-functions";
+import React, { useState, useEffect } from 'react';
+import Slider from 'react-input-slider';
+import fetch from 'isomorphic-unfetch';
+import { Helmet } from 'react-helmet';
+import PropTypes from 'prop-types';
+import Error from '../Components/Error';
+import DrumPad from '../Components/DrumPad';
+import SoundUploader from '../Components/SoundUploader';
+import TimeSignature from '../Components/TimeSignature/timeSignature';
+import { useInterval, auth } from '../utils/common-functions';
 import {
   getOscillator,
   createMetronomeOscillator,
   createMetronomeOscillatorB1
-} from "../utils/sounds";
-import { Helmet } from "react-helmet";
-import PropTypes from "prop-types";
+} from '../utils/sounds';
 
 const Home = ({ originalLayout, error }) => {
   const [tempo, setTempo] = useState(100);
@@ -51,8 +51,13 @@ const Home = ({ originalLayout, error }) => {
   const validateBeats = layout => {
     let beatLength = layout[0].beats.length;
     while (!Number.isInteger(beatLength / beatsMeasure)) {
+      // eslint-disable-next-line no-loop-func
       layout.forEach(row => {
-        beatLength < beatsMeasure ? row.beats.push(false) : row.beats.pop();
+        if (beatLength < beatsMeasure) {
+          row.beats.push(false);
+        } else {
+          row.beats.pop();
+        }
       });
       beatLength = layout[0].beats.length;
     }
@@ -62,7 +67,11 @@ const Home = ({ originalLayout, error }) => {
   const updateBeats = (layout, remove) => {
     layout.forEach(row => {
       for (let i = beatsMeasure; i > 0; i--) {
-        remove ? row.beats.pop() : row.beats.push(false);
+        if (remove) {
+          row.beats.pop();
+        } else {
+          row.beats.push(false);
+        }
       }
     });
     return setLayout(layout);
@@ -88,7 +97,7 @@ const Home = ({ originalLayout, error }) => {
   const playNote = () => {
     const metranomeSoundB1 = createMetronomeOscillatorB1(audioCtx);
     const metranomeSound = createMetronomeOscillator(audioCtx);
-    let val = count === layout[0].beats.length ? 1 : count + 1;
+    const val = count === layout[0].beats.length ? 1 : count + 1;
     setCount(val);
     const layoutNotes = layout.map(
       ({ beats, name }) => beats[val - 1] && getOscillator(audioCtx, name)
@@ -117,7 +126,7 @@ const Home = ({ originalLayout, error }) => {
     }, 25);
   };
 
-  if (error) return <Error {...{ error }}></Error>;
+  if (error) return <Error {...{ error }} />;
 
   return (
     <>
@@ -125,13 +134,19 @@ const Home = ({ originalLayout, error }) => {
         <title>Drum Root</title>
       </Helmet>
       <SoundUploader />
-      <p>Count: {count}</p>
-      <p>Tempo: {tempo}</p>
+      <p>
+        Count:
+        {count}
+      </p>
+      <p>
+        Tempo:
+        {tempo}
+      </p>
       <TimeSignature
         {...{ beatDivision, beatsMeasure, setBeatDivision, setBeatsMeasure }}
       />
       <button onClick={() => setMetronome(!metronome)}>
-        {metronome ? "Turn off metronome" : "Turn on metronome"}
+        {metronome ? 'Turn off metronome' : 'Turn on metronome'}
       </button>
       <input type="button" value="add new beat" onClick={() => addNewBeat()} />
       <input type="button" value="remove beat" onClick={() => rmvBeat()} />
@@ -144,7 +159,7 @@ const Home = ({ originalLayout, error }) => {
         xmax={300}
       />
       <button onClick={() => onPlayButtonClick(!play)}>
-        {play ? "Stop" : "Play"}
+        {play ? 'Stop' : 'Play'}
       </button>
       <DrumPad {...{ count, layout, swapBeat, beatsMeasure }} />
     </>
@@ -156,10 +171,10 @@ Home.getInitialProps = async ctx => {
   let originalLayout = [];
   let error;
   try {
-    const response = await fetch("http://localhost:3000/drumlayout", {
-      method: "GET",
+    const response = await fetch(process.env.REACT_APP_DRUM_LAYOUT, {
+      method: 'GET',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
         Authorization: token
       }
     });

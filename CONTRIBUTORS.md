@@ -1,4 +1,8 @@
-# Instructions
+# Drum Root Contributors
+
+**[Back to Drum Root](./README.md)**
+
+## Instructions on adding your name
 
 Add your name/nickname, github accont, and discord name.
 
@@ -10,7 +14,7 @@ Please follow this template:
 
 ---
 
-# Contributors
+## List of Contributors
 
 - Gavin | https://github.com/rgavinc | Gavin#6391
 - Amirdlz | https://github.com/aynorica | Amirdlz#6941
@@ -70,3 +74,16 @@ Please follow this template:
 - Edwin Boon | https://github.com/edwinboon| Edwin#0147
 - Agnieszka Wozniak | https://github.com/woziu17 | WOZIU#4233
 - Will | https://github.com/arkiis | Arkiis#0778
+- Mobasergio | https://github.com/mobasergio | Nytz#7425
+- Domantas Bazys | https://github.com/DomantasBazys | Domantuxazz#4934
+- Lukas Hirt | https://github.com/LukasHirt | Lukas Hirt#1524
+- Brandon Tripp | https://github.com/Brandon-G-Tripp | BGTripp3 #0636
+- Yassine | https://github.com/Yassineab27 | Yass#0186
+- Anurag Yadav | https://github.com/yadavanurag | yadavanurag#0362
+- Daewon Kim | https://github.com/xoxwgys56 | xoxwgys56
+- Mike | https://github.com/MikePassetti | MikeP
+- Natalie | https://github.com/NataliePina | nataliepina
+- Sushant | https://github.com/frozenparadox99 | sushant#7722
+- Ash | https://github.com/ashcyber | ashcyber
+
+**[Back to Drum Root](./README.md)**
