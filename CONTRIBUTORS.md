@@ -81,7 +81,7 @@ Please follow this template:
 - Anurag Yadav | https://github.com/yadavanurag | yadavanurag#0362
 - Daewon Kim | https://github.com/xoxwgys56 | xoxwgys56
 - Mike | https://github.com/MikePassetti | MikeP
+- Sushant | https://github.com/frozenparadox99 | sushant#7722
 - Ash | https://github.com/ashcyber | ashcyber
----
 
 **[Back to Drum Root](./README.md)**
