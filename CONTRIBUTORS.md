@@ -85,5 +85,7 @@ Please follow this template:
 - Natalie | https://github.com/NataliePina | nataliepina
 - Sushant | https://github.com/frozenparadox99 | sushant#7722
 - Ash | https://github.com/ashcyber | ashcyber
+- Luc | https://github.com/lucvankerkvoort | lucvankerkvoort
+  #5222
 
 **[Back to Drum Root](./README.md)**
