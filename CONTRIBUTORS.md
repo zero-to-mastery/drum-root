@@ -88,5 +88,6 @@ Please follow this template:
 - Luc | https://github.com/lucvankerkvoort | lucvankerkvoort#5222
 - RedJanvier | https://github.com/RedJanvier | RedJanvier#4486
 - Sebastian | https://github.com/sebo94 | Hikikomori
+- NelsonPunch | https://github.com/tomneo2004 | NelsonPunch#2092
 
 **[Back to Drum Root](./README.md)**
