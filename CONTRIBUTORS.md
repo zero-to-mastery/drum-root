@@ -89,5 +89,5 @@ Please follow this template:
 - RedJanvier | https://github.com/RedJanvier | RedJanvier#4486
 - Sebastian | https://github.com/sebo94 | Hikikomori
 - NelsonPunch | https://github.com/tomneo2004 | NelsonPunch#2092
-
-**[Back to Drum Root](./README.md)**
+- NikhathFirdose |https://github.com/nikhathfirdose|nikhath_firdose#1318
+  **[Back to Drum Root](./README.md)**
