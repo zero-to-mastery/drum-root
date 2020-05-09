@@ -89,5 +89,6 @@ Please follow this template:
 - RedJanvier | https://github.com/RedJanvier | RedJanvier#4486
 - Sebastian | https://github.com/sebo94 | Hikikomori
 - NelsonPunch | https://github.com/tomneo2004 | NelsonPunch#2092
+- AlbertP | https://github.com/acpucio | digdog3000
 
 **[Back to Drum Root](./README.md)**

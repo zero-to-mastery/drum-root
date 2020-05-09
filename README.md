@@ -87,7 +87,7 @@ Storybook is a way to view the components in isolation. To view Drum Root's stor
 
 ### in Development Mode
 
-If this is your first time running tests, begin by ensuring your packages are installed. If not, [install packages](#Installation).
+If this is your first time running tests, begin by ensuring that the required packages are installed. [install packages](#Installation).
 
 To get started with Unit Test, run the following command:
 
