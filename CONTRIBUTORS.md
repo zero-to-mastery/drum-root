@@ -89,6 +89,6 @@ Please follow this template:
 - RedJanvier | https://github.com/RedJanvier | RedJanvier#4486
 - Sebastian | https://github.com/sebo94 | Hikikomori
 - NelsonPunch | https://github.com/tomneo2004 | NelsonPunch#2092
-- Sana Shaik  | https://github.com/sanashaik123 | s2code#9949
+- Sana Shaik  | https://github.com/sanashaik123 | s2code#0842
 
 **[Back to Drum Root](./README.md)**
