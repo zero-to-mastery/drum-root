@@ -79,7 +79,7 @@ To get started with the front end, fork the repository and run the following com
 
 Storybook is a way to view the components in isolation. To view Drum Root's storybook, run the following command:
 
-    npm run storyboook
+    npm run storybook
 
 ---
 
