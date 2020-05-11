@@ -90,6 +90,7 @@ Please follow this template:
 - Sebastian | https://github.com/sebo94 | Hikikomori
 - NelsonPunch | https://github.com/tomneo2004 | NelsonPunch#2092
 - Raul | https://github.com/Murciegalo | Murciegalo
+- Sana Shaik  | https://github.com/sanashaik123 | s2code#0842
 - NikhathFirdose |https://github.com/nikhathfirdose|nikhath_firdose#1318
 - AlbertP | https://github.com/acpucio | digdog3000
 - Tumo Masire | https://github.com/TumoM | SwagTM#1242
