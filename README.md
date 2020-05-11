@@ -79,7 +79,7 @@ To get started with the front end, fork the repository and run the following com
 
 Storybook is a way to view the components in isolation. To view Drum Root's storybook, run the following command:
 
-    npm run storyboook
+    npm run storybook
 
 ---
 
@@ -87,7 +87,7 @@ Storybook is a way to view the components in isolation. To view Drum Root's stor
 
 ### in Development Mode
 
-If you are the first time to start the tests, ensure your packages are installed. If not, [install packages](#Installation).
+If this is your first time running tests, begin by ensuring that the required packages are installed. [install packages](#Installation).
 
 To get started with Unit Test, run the following command:
 

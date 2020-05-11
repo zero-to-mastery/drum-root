@@ -9,7 +9,7 @@ Add your name/nickname, github accont, and discord name.
 Please follow this template:
 
 ```
-- {your name/nickname} {https://github.com/your-account} | {your discord name}
+- {your name/nickname} | {https://github.com/your-account} | {your discord name}
 ```
 
 ---
@@ -90,5 +90,8 @@ Please follow this template:
 - Sebastian | https://github.com/sebo94 | Hikikomori
 - NelsonPunch | https://github.com/tomneo2004 | NelsonPunch#2092
 - Sana Shaik  | https://github.com/sanashaik123 | s2code#0842
+- NikhathFirdose |https://github.com/nikhathfirdose|nikhath_firdose#1318
+- AlbertP | https://github.com/acpucio | digdog3000
+- Tumo Masire | https://github.com/TumoM | SwagTM#1242
 
 **[Back to Drum Root](./README.md)**
