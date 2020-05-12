@@ -16,6 +16,7 @@ Please follow this template:
 
 ## List of Contributors
 
+- Hatim | https://github.com/LethalPants | LethalPants#0453
 - Gavin | https://github.com/rgavinc | Gavin#6391
 - Amirdlz | https://github.com/aynorica | Amirdlz#6941
 - Yash | https://github.com/yashShelatkar | yaashShelatkar
@@ -90,7 +91,7 @@ Please follow this template:
 - Sebastian | https://github.com/sebo94 | Hikikomori
 - NelsonPunch | https://github.com/tomneo2004 | NelsonPunch#2092
 - Raul | https://github.com/Murciegalo | Murciegalo
-- Sana Shaik  | https://github.com/sanashaik123 | s2code#0842
+- Sana Shaik | https://github.com/sanashaik123 | s2code#0842
 - NikhathFirdose |https://github.com/nikhathfirdose|nikhath_firdose#1318
 - AlbertP | https://github.com/acpucio | digdog3000
 - Tumo Masire | https://github.com/TumoM | SwagTM#1242
