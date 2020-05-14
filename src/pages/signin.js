@@ -2,8 +2,31 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import FormWrapper from '../Components/FormWrapper';
 import { signin } from '../utils/common-functions';
+
+const Label = styled.label `
+  font-family: raleway;
+  color: "#6C7682"; 
+  font-size: 1.2rem;
+`;
+
+const Input = styled.input `
+  border-radius: 0.3rem;
+  border: 1px solid #525962;
+  width: 75%;
+  height: 1.3rem;
+`;
+
+const Fieldset = styled.fieldset `
+  border-radius: 0.3rem;
+  border: 1px solid #525962;
+  box-shadow: 0 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.1);
+  max-width: 40rem;
+  margin: 0 auto; 
+  height: 15rem; 
+`
 
 // eslint-disable-next-line no-unused-vars
 const Signin = ({ onRouteChange, loadUser }) => {
@@ -22,35 +45,34 @@ const Signin = ({ onRouteChange, loadUser }) => {
         <title>Sign In</title>
       </Helmet>
       <FormWrapper onSubmit={onSubmitSignIn}>
-        <fieldset>
-          <legend>Sign In</legend>
-          <div>
-            <label htmlFor="email-address">Email</label>
-            <input
-              className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100 hover-black"
+        <Fieldset>
+          <legend style={{ display: 'none' }}>Sign In</legend>
+          <div style={{ padding: '1rem', width: '20rem' }}>
+            <Label htmlFor="email-address">Email</Label>
+            <br />
+            <Input
               type="email"
               name="email-address"
               id="email-address"
               onChange={e => setSigninEmail(e.target.value)}
             />
           </div>
-          <div>
-            <label htmlFor="password">Password</label>
-            <input
+          <div style={{ padding: '1rem', width: '20rem' }}>
+            <Label htmlFor="password">Password</Label>
+            <br />
+            <Input
               type="password"
               name="password"
               id="password"
               onChange={e => setSigninPassword(e.target.value)}
             />
           </div>
-        </fieldset>
-        <div>
-          <input type="submit" value="Sign in" />
-        </div>
+          <div style={{ display: 'flex', width: '22%', justifyContent: 'space-between', padding: '1rem' }}>
+            <input onClick={onRouteChange} type="submit" value="Sign in" />
+            <button>Register</button>
+          </div>
+        </Fieldset>
       </FormWrapper>
-      <div className="lh-copy mt3">
-        <p>Register</p>
-      </div>
     </>
   );
 };
