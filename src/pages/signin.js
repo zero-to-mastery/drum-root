@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import FormWrapper from '../Components/FormWrapper';
 import { signin } from '../utils/common-functions';
-import styled, { createGlobalStyle } from 'styled-components';
 
 const Label = styled.label `
   font-family: raleway;
@@ -49,7 +49,7 @@ const Signin = ({ onRouteChange, loadUser }) => {
           <legend style={{ display: 'none' }}>Sign In</legend>
           <div style={{ padding: '1rem', width: '20rem' }}>
             <Label htmlFor="email-address">Email</Label>
-            <br></br>
+            <br />
             <Input
               type="email"
               name="email-address"
@@ -59,7 +59,7 @@ const Signin = ({ onRouteChange, loadUser }) => {
           </div>
           <div style={{ padding: '1rem', width: '20rem' }}>
             <Label htmlFor="password">Password</Label>
-            <br></br>
+            <br />
             <Input
               type="password"
               name="password"
@@ -68,8 +68,8 @@ const Signin = ({ onRouteChange, loadUser }) => {
             />
           </div>
           <div style={{ display: 'flex', width: '22%', justifyContent: 'space-between', padding: '1rem' }}>
-          <input onClick={onRouteChange} type="submit" value="Sign in" />
-          <button>Register</button>
+            <input onClick={onRouteChange} type="submit" value="Sign in" />
+            <button>Register</button>
           </div>
         </Fieldset>
       </FormWrapper>
