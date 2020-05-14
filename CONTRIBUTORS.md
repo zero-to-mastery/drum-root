@@ -94,5 +94,6 @@ Please follow this template:
 - NikhathFirdose |https://github.com/nikhathfirdose|nikhath_firdose#1318
 - AlbertP | https://github.com/acpucio | digdog3000
 - Tumo Masire | https://github.com/TumoM | SwagTM#1242
+- Freyr Helgason | https://github.com/frhel | Freysi#1354
 
 **[Back to Drum Root](./README.md)**
