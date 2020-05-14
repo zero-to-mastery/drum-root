@@ -4,6 +4,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 import Link from 'next/link';
 import { signout } from '../utils/common-functions';
 import ErrorBoundary from '../Components/ErrorBoundary';
+import Logo from '../Components/Logo/Logo';
 
 const BodyStyling = createGlobalStyle`
   body {
@@ -22,7 +23,8 @@ const PageWrapper = styled.div`
 
 const HeaderStyling = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  
+  space-between;
   margin-bottom: 3rem;
 `;
 
@@ -42,7 +44,7 @@ class MyApp extends App {
             <HeaderStyling>
               <Link href="/">
                 <a href="/">
-                  <h1>Drum Root</h1>
+                  <Logo />
                 </a>
               </Link>
               <Button onClick={signout}>Sign Out</Button>
