@@ -94,5 +94,6 @@ Please follow this template:
 - NikhathFirdose |https://github.com/nikhathfirdose|nikhath_firdose#1318
 - AlbertP | https://github.com/acpucio | digdog3000
 - Tumo Masire | https://github.com/TumoM | SwagTM#1242
+- Bogdan Barjaktarevic | https://github.com/BogdanBarjaktarevic | Bogi#0305
 
 **[Back to Drum Root](./README.md)**
