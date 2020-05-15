@@ -95,5 +95,8 @@ Please follow this template:
 - AlbertP | https://github.com/acpucio | digdog3000
 - Tumo Masire | https://github.com/TumoM | SwagTM#1242
 - Deepak | https://github.com/deepakhb2 | Deepak#6171
+- Freyr Helgason | https://github.com/frhel | Freysi#1354
+- Bogdan Barjaktarevic | https://github.com/BogdanBarjaktarevic | Bogi#0305
+- Nedeljko | https://github.com/berisavac | Nedeljko#1527
 
 **[Back to Drum Root](./README.md)**
