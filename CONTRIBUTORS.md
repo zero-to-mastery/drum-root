@@ -99,5 +99,6 @@ Please follow this template:
 - Bogdan Barjaktarevic | https://github.com/BogdanBarjaktarevic | Bogi#0305
 - Nedeljko | https://github.com/berisavac | Nedeljko#1527
 - Jordan | https://github.com/jpstanway | mtninja#0126
+- Shuntaro | https://github.com/maegatro | Mae28#0093
 
 **[Back to Drum Root](./README.md)**
