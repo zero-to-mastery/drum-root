@@ -99,5 +99,6 @@ Please follow this template:
 - Bogdan Barjaktarevic | https://github.com/BogdanBarjaktarevic | Bogi#0305
 - Nedeljko | https://github.com/berisavac | Nedeljko#1527
 - Jordan | https://github.com/jpstanway | mtninja#0126
+- Ryan | https://github.com/secantsquared | secantsquared#6711
 
 **[Back to Drum Root](./README.md)**
