@@ -99,5 +99,6 @@ Please follow this template:
 - Bogdan Barjaktarevic | https://github.com/BogdanBarjaktarevic | Bogi#0305
 - Nedeljko | https://github.com/berisavac | Nedeljko#1527
 - Jordan | https://github.com/jpstanway | mtninja#0126
+- Kelvin | https://github.com/kelvinabella | kelvs#7175
 
 **[Back to Drum Root](./README.md)**
