@@ -28,6 +28,7 @@ Please follow this template:
 - Juho | https://github.com/leejooho77 | Juho Lee#2770
 - Diemention | https://github.com/guitarhub786 | Diemention#1534
 - Felipe Vidal | https://github.com/FelipeSVidal | Felipe_Vidal#3388
+- Devon | https://github.com/ayodlo | ayodlo#4418
 - Diane | https://github.com/leighd2008 | Diane#3610
 - Coded | https://github.com/talk2coded | Talk2coded
 - Abhinav | https://github.com/AbsMechanik | AbsMechanik#5535
