@@ -28,6 +28,7 @@ Please follow this template:
 - Juho | https://github.com/leejooho77 | Juho Lee#2770
 - Diemention | https://github.com/guitarhub786 | Diemention#1534
 - Felipe Vidal | https://github.com/FelipeSVidal | Felipe_Vidal#3388
+- Devon | https://github.com/ayodlo | ayodlo#4418
 - Diane | https://github.com/leighd2008 | Diane#3610
 - Coded | https://github.com/talk2coded | Talk2coded
 - Abhinav | https://github.com/AbsMechanik | AbsMechanik#5535
@@ -100,5 +101,6 @@ Please follow this template:
 - Nedeljko | https://github.com/berisavac | Nedeljko#1527
 - Jordan | https://github.com/jpstanway | mtninja#0126
 - Tony Hoss | https://github.com/BigT1305 | BT32#2337
+- Shuntaro | https://github.com/maegatro | Mae28#0093
 
 **[Back to Drum Root](./README.md)**
