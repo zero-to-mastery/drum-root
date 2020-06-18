@@ -100,6 +100,7 @@ Please follow this template:
 - Bogdan Barjaktarevic | https://github.com/BogdanBarjaktarevic | Bogi#0305
 - Nedeljko | https://github.com/berisavac | Nedeljko#1527
 - Jordan | https://github.com/jpstanway | mtninja#0126
+- Tony Hoss | https://github.com/BigT1305 | BT32#2337
 - Shuntaro | https://github.com/maegatro | Mae28#0093
 
 **[Back to Drum Root](./README.md)**
