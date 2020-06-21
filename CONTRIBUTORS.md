@@ -103,5 +103,6 @@ Please follow this template:
 - Kelvin | https://github.com/kelvinabella | kelvs#7175
 - Tony Hoss | https://github.com/BigT1305 | BT32#2337
 - Shuntaro | https://github.com/maegatro | Mae28#0093
+- KiranA | https://github.com/KiranVegeta| a_kiran
 
 **[Back to Drum Root](./README.md)**
