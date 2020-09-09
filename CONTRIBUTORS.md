@@ -105,5 +105,6 @@ Please follow this template:
 - Shuntaro | https://github.com/maegatro | Mae28#0093
 - Manivel Nagarajan | https://github.com/manivelnagarajan | Manivel#9590
 - Aniket | https://github.com/arkeo01 | AniketParate#7911
+- Seth | https://github.com/sethrandalldev | sirrandle#3516
 
 **[Back to Drum Root](./README.md)**
