@@ -16,6 +16,7 @@ Please follow this template:
 
 ## List of Contributors
 
+- Sandeep | https://github.com/softdevsandy | SoftDevSandy#6338
 - Gavin | https://github.com/rgavinc | Gavin#6391
 - Amirdlz | https://github.com/aynorica | Amirdlz#6941
 - Yash | https://github.com/yashShelatkar | yaashShelatkar
@@ -106,6 +107,5 @@ Please follow this template:
 - Manivel Nagarajan | https://github.com/manivelnagarajan | Manivel#9590
 - Aniket | https://github.com/arkeo01 | AniketParate#7911
 - Vincent | https://github.com/Vincent-Vais | Vince_Vais#0504
-- Sandeep | https://github.com/softdevsandy | SoftDevSandy#6338
 
 **[Back to Drum Root](./README.md)**
