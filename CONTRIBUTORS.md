@@ -16,7 +16,6 @@ Please follow this template:
 
 ## List of Contributors
 
-- Sandy | https://github.com/softdevsandy | SoftDevSandy#6338
 - Gavin | https://github.com/rgavinc | Gavin#6391
 - Amirdlz | https://github.com/aynorica | Amirdlz#6941
 - Yash | https://github.com/yashShelatkar | yaashShelatkar
