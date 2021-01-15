@@ -16,6 +16,7 @@ Please follow this template:
 
 ## List of Contributors
 
+- Ocean | https://github.com/oceansf | lotion#7670
 - Gavin | https://github.com/rgavinc | Gavin#6391
 - Amirdlz | https://github.com/aynorica | Amirdlz#6941
 - Yash | https://github.com/yashShelatkar | yaashShelatkar
