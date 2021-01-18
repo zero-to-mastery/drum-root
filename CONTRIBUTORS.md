@@ -41,3 +41,4 @@ Please follow this template:
 - Ayush Singh Kushwaha| https://github.com/Ayush909 | TheAyushThing#0552
 - Hankles | https://github.com/hankles | hankles_#4107
 - Pramod Singh | https://github.com/prmdsngh | pramod Singh#1495
+- Ronnen Nagal | https://github.com/nagalr | nagalr
