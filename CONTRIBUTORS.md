@@ -48,6 +48,7 @@ Please follow this template:
 - Adenekan Wonderful | https://github.com/adenekan41 | codewonders#8148
 - Hankles | https://github.com/hankles | hankles\_#4107
 - Pramod Singh | https://github.com/prmdsngh | pramod Singh#1495
+- Ronnen Nagal | https://github.com/nagalr | nagalr
 - Kervin Vasquez | https://github.com/kervin5 | Kervin5#3175
 - Parveen Kumar | https://github.com/parveenmittal1 | mysterious_code
 - Cliff | https://github.com/cliftontc | cliftontc#8746
