@@ -106,5 +106,6 @@ Please follow this template:
 - Manivel Nagarajan | https://github.com/manivelnagarajan | Manivel#9590
 - Aniket | https://github.com/arkeo01 | AniketParate#7911
 - Vincent | https://github.com/Vincent-Vais | Vince_Vais#0504
+-Ayush kakkar|https://github.com/Ayushkakkar24|ayush#swag
 
 **[Back to Drum Root](./README.md)**
