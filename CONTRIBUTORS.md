@@ -108,6 +108,6 @@ Please follow this template:
 - Aniket | https://github.com/arkeo01 | AniketParate#7911
 - Vincent | https://github.com/Vincent-Vais | Vince_Vais#0504
 - Achiya | https://github.com/achiyahb | achiyahb#2225
--Ayush kakkar | https://github.com/Ayushkakkar24 | ayush#swag
+- Ayush kakkar | https://github.com/Ayushkakkar24 | ayush#swag
 
 **[Back to Drum Root](./README.md)**
