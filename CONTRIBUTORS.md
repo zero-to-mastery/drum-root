@@ -16,6 +16,7 @@ Please follow this template:
 
 ## List of Contributors
 
+- Ocean | https://github.com/oceansf | lotion#7670
 - Gavin | https://github.com/rgavinc | Gavin#6391
 - Amirdlz | https://github.com/aynorica | Amirdlz#6941
 - Yash | https://github.com/yashShelatkar | yaashShelatkar
@@ -107,5 +108,6 @@ Please follow this template:
 - Aniket | https://github.com/arkeo01 | AniketParate#7911
 - Vincent | https://github.com/Vincent-Vais | Vince_Vais#0504
 - Achiya | https://github.com/achiyahb | achiyahb#2225
+-Ayush kakkar | https://github.com/Ayushkakkar24 | ayush#swag
 
 **[Back to Drum Root](./README.md)**
