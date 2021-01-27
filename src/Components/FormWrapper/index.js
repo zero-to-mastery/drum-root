@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 const FormWrapper = ({ children, onSubmit }) => {
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
   const handleSubmit = async e => {
     try {
-      console.log("trying");
       e.preventDefault();
       await onSubmit();
       setSuccess(true);
-    } catch (e) {
-      setError(e && e.message);
+    } catch (err) {
+      setError(err && err.message);
     }
   };
 
@@ -21,6 +21,14 @@ const FormWrapper = ({ children, onSubmit }) => {
       {children}
     </form>
   );
+};
+
+FormWrapper.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]),
+  onSubmit: PropTypes.func
 };
 
 export default FormWrapper;

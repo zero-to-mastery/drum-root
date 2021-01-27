@@ -1,15 +1,15 @@
-export const mockLayout1 = [
+const mockLayout1 = [
   {
-    name: "hiHat",
-    icon: "🇹🇼",
+    name: 'hiHat',
+    icon: '🇹🇼',
     beats: [true, true, true, true]
   },
   {
-    name: "bass",
-    icon: "🛢️",
+    name: 'bass',
+    icon: '🛢️',
     beats: [true, false, false, false]
   },
-  { name: "snare", icon: "🥁", beats: [false, false, true, false] }
+  { name: 'snare', icon: '🥁', beats: [false, false, true, false] }
 ];
 
-console.log("mocklayout in file", mockLayout1);
+export default mockLayout1;

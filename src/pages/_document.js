@@ -1,7 +1,7 @@
 // See https://dev.to/aprietof/nextjs--styled-components-the-really-simple-guide----101c
-import Document, { Head, Main, NextScript } from "next/document";
-import React from "react";
-import { ServerStyleSheet } from "styled-components";
+import Document, { Head, Main, NextScript } from 'next/document';
+import React from 'react';
+import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -18,12 +18,13 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html>
+      <html lang="en">
         <Head>{this.props.styleTags}</Head>
         <body>
           <Main />
           <NextScript />
         </body>
+        <script src="https://unpkg.com/wavesurfer.js" />
       </html>
     );
   }

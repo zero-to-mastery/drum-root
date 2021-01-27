@@ -1,14 +1,15 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Table = styled.table`
   border-collapse: collapse;
-  border-spacing: 0px;
+  border-spacing: 0;
   &,
   th,
-  td {
-    padding: 5px;
-    border: 1px solid black;
+  git td {
+    padding: 0.3125rem;
+    border: 0.125rem solid black;
   }
   td {
     width: 2rem;
@@ -22,19 +23,21 @@ const Table = styled.table`
   td:nth-of-type(${({ count }) => count}) {
     background-color: yellow;
   }
+  td:nth-of-type(${({ beatsMeasure }) => beatsMeasure}n) {
+    border-right: 0.125rem solid black;
+  }
 `;
 
-const DrumPad = ({ count, layout, swapBeat }) => {
+const DrumPad = ({ count, layout, swapBeat, beatsMeasure }) => {
   return (
-    <Table {...{ count }}>
+    <Table {...{ count, beatsMeasure }}>
       <tbody>
         {layout.map(({ name, icon, beats }, rowNum) => (
-          <tr key={name} onClick={() => console.log("hello")}>
+          <tr key={name}>
             {beats.map((hasBeat, beatNum) => (
               <td
                 key={beatNum}
                 onClick={() => {
-                  console.log({ rowNum, beatNum });
                   swapBeat(rowNum, beatNum);
                 }}
               >
@@ -50,6 +53,19 @@ const DrumPad = ({ count, layout, swapBeat }) => {
       </tbody>
     </Table>
   );
+};
+
+DrumPad.propTypes = {
+  count: PropTypes.number.isRequired,
+  layout: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      icon: PropTypes.string.isRequired,
+      beats: PropTypes.arrayOf(PropTypes.bool)
+    })
+  ),
+  swapBeat: PropTypes.func,
+  beatsMeasure: PropTypes.number
 };
 
 export default DrumPad;
