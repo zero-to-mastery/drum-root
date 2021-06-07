@@ -110,5 +110,5 @@ Please follow this template:
 - Vincent | https://github.com/Vincent-Vais | Vince_Vais#0504
 - Achiya | https://github.com/achiyahb | achiyahb#2225
 - Ayush kakkar | https://github.com/Ayushkakkar24 | ayush#swag
-
+- GAurav Deshwal| https://github.com/grvdshwl | Gaurav Deshwal#2512
 **[Back to Drum Root](./README.md)**
