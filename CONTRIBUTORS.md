@@ -112,5 +112,6 @@ Please follow this template:
 - Ayush kakkar | https://github.com/Ayushkakkar24 | ayush#swag
 - Mike Coleman | https://github.com/mcflav | Mike Coleman
 - GAurav Deshwal| https://github.com/grvdshwl | Gaurav Deshwal#2512
+- Christian NIYOKWIZERWA | https://github.com/cyrilechristian | Christian Niyokwizerwa#2283
 
 **[Back to Drum Root](./README.md)**
